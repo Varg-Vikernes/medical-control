@@ -1,11 +1,11 @@
 
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <div className="bg-blue-500 text-white p-4">Mi componente con Tailwind CSS</div>
-
+      <Navbar />
     </div>
   );
 }
