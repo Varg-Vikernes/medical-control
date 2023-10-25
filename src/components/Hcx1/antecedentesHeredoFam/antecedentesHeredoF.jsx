@@ -13,6 +13,16 @@ const HeredoFamiliar = (category) => {
         neoplasticos: false,
         artriticos: false,
         obesidad: false,
+        cardiovasculares: false,
+        hipertensivos: false,
+        congenitos: false,
+        hematologicos: false,
+        audiologicos: false,
+        tuberculosos: false,
+        sifiliticos: false,
+        ulcerosos: false,
+        litiasicos: false,
+        otros: false,
         //        /*  Aqui van los familiares que tengan algo de eso *
         padre: false,
         madre: false,
@@ -122,6 +132,512 @@ const HeredoFamiliar = (category) => {
                             />
                         </td>
                     </tr>
+
+                    <tr>
+                        <td className="border p-2">Psiquiatricos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.psiquiatrico}
+                                onChange={() => HeredoFamiliar('psiquiatrico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.psiquiatrico}
+                                onChange={() => HeredoFamiliar('psiquiatrico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.psiquiatrico}
+                                onChange={() => HeredoFamiliar('psiquiatrico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.psiquiatrico}
+                                onChange={() => HeredoFamiliar('psiquiatrico')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.psiquiatrico}
+                                onChange={() => HeredoFamiliar('psiquiatrico')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Epileptico</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.epileptico}
+                                onChange={() => HeredoFamiliar('epileptico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.epileptico}
+                                onChange={() => HeredoFamiliar('epileptico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.epileptico}
+                                onChange={() => HeredoFamiliar('epileptico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.epileptico}
+                                onChange={() => HeredoFamiliar('epileptico')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.epileptico}
+                                onChange={() => HeredoFamiliar('epileptico')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Neoplasicos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.neoplasticos}
+                                onChange={() => HeredoFamiliar('neoplasticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.neoplasticos}
+                                onChange={() => HeredoFamiliar('neoplasticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.neoplasticos}
+                                onChange={() => HeredoFamiliar('neoplasticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.neoplasticos}
+                                onChange={() => HeredoFamiliar('neoplasticos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.neoplasticos}
+                                onChange={() => HeredoFamiliar('neoplasticos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Artriticos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.artriticos}
+                                onChange={() => HeredoFamiliar('artriticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.artriticos}
+                                onChange={() => HeredoFamiliar('artriticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.artriticos}
+                                onChange={() => HeredoFamiliar('artriticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.artriticos}
+                                onChange={() => HeredoFamiliar('artriticos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.artriticos}
+                                onChange={() => HeredoFamiliar('artriticos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Obesidad</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.obesidad}
+                                onChange={() => HeredoFamiliar('obesidad')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.obesidad}
+                                onChange={() => HeredoFamiliar('obesidad')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.obesidad}
+                                onChange={() => HeredoFamiliar('obesidad')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.obesidad}
+                                onChange={() => HeredoFamiliar('obesidad')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.obesidad}
+                                onChange={() => HeredoFamiliar('obesidad')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">CardioVasculares</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.cardiovasculares}
+                                onChange={() => HeredoFamiliar('cardioVasculares')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.cardiovasculares}
+                                onChange={() => HeredoFamiliar('cardioVasculares')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.cardiovasculares}
+                                onChange={() => HeredoFamiliar('cardioVasculares')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.cardiovasculares}
+                                onChange={() => HeredoFamiliar('cardioVasculares')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.cardiovasculares}
+                                onChange={() => HeredoFamiliar('cardioVasculares')}
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="border p-2">Hipertencivos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hipertensivos}
+                                onChange={() => HeredoFamiliar('hipertensivos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hipertensivos}
+                                onChange={() => HeredoFamiliar('hipertensivos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hipertensivos}
+                                onChange={() => HeredoFamiliar('hipertensivos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hipertensivos}
+                                onChange={() => HeredoFamiliar('hipertensivos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hipertensivos}
+                                onChange={() => HeredoFamiliar('hipertensivos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Congenitos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.congenitos}
+                                onChange={() => HeredoFamiliar('congenitos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.congenitos}
+                                onChange={() => HeredoFamiliar('congenitos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.congenitos}
+                                onChange={() => HeredoFamiliar('congenitos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.congenitos}
+                                onChange={() => HeredoFamiliar('congenitos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.congenitos}
+                                onChange={() => HeredoFamiliar('congenitos')}
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="border p-2">Hermatologicos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hematologicos}
+                                onChange={() => HeredoFamiliar('hermatologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hematologicos}
+                                onChange={() => HeredoFamiliar('hermatologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hematologicos}
+                                onChange={() => HeredoFamiliar('hermatologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hematologicos}
+                                onChange={() => HeredoFamiliar('hermatologicos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.hematologicos}
+                                onChange={() => HeredoFamiliar('hermatologicos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Audiologicos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.audiologicos}
+                                onChange={() => HeredoFamiliar('audiologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.audiologicos}
+                                onChange={() => HeredoFamiliar('audiologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.audiologicos}
+                                onChange={() => HeredoFamiliar('audiologicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.audiologicos}
+                                onChange={() => HeredoFamiliar('audiologicos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.audiologicos}
+                                onChange={() => HeredoFamiliar('audiologicos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Tuberculosos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Tuberculosos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.tuberculosos}
+                                onChange={() => HeredoFamiliar('tuberculosos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Sifiliticos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.sifiliticos}
+                                onChange={() => HeredoFamiliar('sifiliticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.sifiliticos}
+                                onChange={() => HeredoFamiliar('sifiliticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.sifiliticos}
+                                onChange={() => HeredoFamiliar('sifiliticos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.sifiliticos}
+                                onChange={() => HeredoFamiliar('sifiliticos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.sifiliticos}
+                                onChange={() => HeredoFamiliar('sifiliticos')}
+                            />
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
