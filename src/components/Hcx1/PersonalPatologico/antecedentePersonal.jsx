@@ -12,6 +12,10 @@ const PersonalPatologico = () => {
     const [noAñosAlcohol, setNoAñosAlcohol] = useState('');
     const [frecuencia, setFrecuencia] = useState('');
     const [toxicomania, setToxicomania] = useState('');
+    const [higiene, setHigiene] = useState('');
+    const [alimentacion, setAlimentacion] = useState('');
+    const [inmunizaciones, setInmunizaciones] = useState('');
+    const [actividadesDepor, setActividadesDepor] = useState('');
     return (
         <form action="" className="w-full p-4">
             <h1 className="text-xl  font-sans mb-4">Antecedentes personales no Patologicos</h1>
@@ -147,34 +151,46 @@ const PersonalPatologico = () => {
 
             <div className="flex justify-betwen mb-4">
                 <div className="flex-1 mr-4">
-                    <label htmlFor="habitacion" className="block font-bold">
-                        Habitacion:
+                    <label htmlFor="Higiene" className="block font-bold">
+                        Higiene:
                     </label>
-                    <input type="text" name="habitacion" id="habitacion"
+                    <input type="text" name="Higiene" id="Higiene"
                         className="w-full border p-2"
-                        value={habitacion}
-                        onChange={(e) => setHabitacion(e.target.value)}
+                        value={higiene}
+                        onChange={(e) => setHigiene(e.target.value)}
                     />
                 </div>
 
                 <div className="flex-1 mr-4">
-                    <label htmlFor="habitadaPor" className="block font-bold">
-                        Habitada por:
+                    <label htmlFor="alimentacion" className="block font-bold">
+                        Alimentacion:
                     </label>
-                    <input type="text" name="habitadaPor" id="habitadaPor"
+                    <input type="text" name="alimentacion" id="alimentacion"
                         className="w-full border p-2"
-                        value={habitadaPor}
-                        onChange={(e) => setHabitadaPor(e.target.value)}
+                        value={alimentacion}
+                        onChange={(e) => setAlimentacion(e.target.value)}
                     />
                 </div>
                 <div className="flex-1 mr-4">
-                    <label htmlFor="noHabitaciones" className="block font-bold">
-                        Numero de habitaciones:
+                    <label htmlFor="Inmunizaciones" className="block font-bold">
+                        Inmunizaciones:
                     </label>
-                    <input type="text" name="noHabitaciones" id="noHabitaciones"
+                    <input type="text" name="Inmunizaciones" id="Inmunizaciones"
                         className="w-full border p-2"
-                        value={noHabitacion}
-                        onChange={(e) => setNoHabitacion(e.target.value)}
+                        value={inmunizaciones}
+                        onChange={(e) => setInmunizaciones(e.target.value)}
+                    />
+                </div>
+            </div>
+            <div className="flex justify-betwen mb-4">
+                <div className="flex-1 mr-4">
+                    <label htmlFor="actividadesDepor" className="block font-bold">
+                        Actividaes deportivas:
+                    </label>
+                    <input type="text" name="actividadesDepor" id="actividadesDepor"
+                        className="w-full border p-2"
+                        value={actividadesDepor}
+                        onChange={(e) => setActividadesDepor(e.target.value)}
                     />
                 </div>
             </div>
