@@ -3,6 +3,7 @@ import Primario from "./DatosPrimarios/primario";
 import Navbar from "../Navbar/Navbar";
 import Identificacion from "./FichaIdentificacion/identificacion";
 import AntecedentesLaborales from "./AntecentesLaboral/antecedentesLabotales";
+import PersonalPatologico from "./PersonalPatologico/antecedentePersonal";
 
 const Hcx1 = () => {
     return (
@@ -14,7 +15,7 @@ const Hcx1 = () => {
                     <div className="w-full md:w-1/2">
                         <img src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
                             alt=""
-                            className="w-60 h-24 object-cover "
+                            className="w-60 h-24 object-cover font-sans "
                         />
                     </div>
                     {/* Texto que identifica el tipo de formulario*/}
@@ -28,6 +29,7 @@ const Hcx1 = () => {
             <Primario />
             <Identificacion />
             <AntecedentesLaborales />
+            <PersonalPatologico />
         </>
     )
 }
