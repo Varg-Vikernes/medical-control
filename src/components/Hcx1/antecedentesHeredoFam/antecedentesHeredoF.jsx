@@ -20,6 +20,16 @@ const HeredoFamiliar = (category) => {
         hijo: false,
         otros: false,
     })
+    if (category === 'padre' || category === 'madre' ||
+        category === 'hermano' || category === 'hijo' || category === 'otro') {
+        if (checklist.padre || checklist.madre || checklist.hermano || checklist.hijo || checklist.otros) {
+            setChecklist({
+                checklist,
+                asmaticos: true,
+                diabeticos: true
+            });
+        }
+    }
 
     return (
         <div className="container mx-auto p-4">
@@ -77,7 +87,36 @@ const HeredoFamiliar = (category) => {
                     <tr>
                         <td className="border p-2">Diabetico</td>
                         <td className="border p-2">
-                            <input type="checkbox"
+                            <input
+                                type="checkbox"
+                                checked={checklist.diabeticos}
+                                onChange={() => HeredoFamiliar('diabetico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.diabeticos}
+                                onChange={() => HeredoFamiliar('diabetico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.diabeticos}
+                                onChange={() => HeredoFamiliar('diabetico')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.diabeticos}
+                                onChange={() => HeredoFamiliar('diabetico')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
                                 checked={checklist.diabeticos}
                                 onChange={() => HeredoFamiliar('diabetico')}
                             />
