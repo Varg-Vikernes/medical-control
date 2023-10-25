@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 
 const HeredoFamiliar = (category) => {
+
     const [checklist, setChecklist] = useState({
         asmaticos: false,
         diabeticos: false,
@@ -22,7 +23,6 @@ const HeredoFamiliar = (category) => {
         sifiliticos: false,
         ulcerosos: false,
         litiasicos: false,
-        otros: false,
         //        /*  Aqui van los familiares que tengan algo de eso *
         padre: false,
         madre: false,
@@ -40,6 +40,7 @@ const HeredoFamiliar = (category) => {
             });
         }
     }
+
 
     return (
         <div className="container mx-auto p-4">
@@ -638,6 +639,122 @@ const HeredoFamiliar = (category) => {
                         </td>
                     </tr>
 
+                    <tr>
+                        <td className="border p-2">Ulcerosos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.ulcerosos}
+                                onChange={() => HeredoFamiliar('ulcerosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.ulcerosos}
+                                onChange={() => HeredoFamiliar('ulcerosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.ulcerosos}
+                                onChange={() => HeredoFamiliar('ulcerosos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.ulcerosos}
+                                onChange={() => HeredoFamiliar('ulcerosos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.ulcerosos}
+                                onChange={() => HeredoFamiliar('ulcerosos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Litiasicos</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.litiasicos}
+                                onChange={() => HeredoFamiliar('litiacicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.litiasicos}
+                                onChange={() => HeredoFamiliar('litiacicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.litiasicos}
+                                onChange={() => HeredoFamiliar('litiacicos')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.litiasicos}
+                                onChange={() => HeredoFamiliar('litiacicos')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.litiasicos}
+                                onChange={() => HeredoFamiliar('litiacicos')}
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td className="border p-2">Otros</td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.otros}
+                                onChange={() => HeredoFamiliar('otros')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.otros}
+                                onChange={() => HeredoFamiliar('otros')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.otros}
+                                onChange={() => HeredoFamiliar('otros')}
+                            />
+                        </td>
+                        <td className="border p-2">
+                            <input
+                                type="checkbox"
+                                checked={checklist.otros}
+                                onChange={() => HeredoFamiliar('otros')}
+                            />
+                        </td>
+                        <td className="border p-2 center">
+                            <input
+                                type="checkbox"
+                                checked={checklist.otros}
+                                onChange={() => HeredoFamiliar('otros')}
+                            />
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
