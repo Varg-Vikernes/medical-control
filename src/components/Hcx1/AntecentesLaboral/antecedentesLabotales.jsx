@@ -6,6 +6,9 @@ const AntecedentesLaborales = () => {
     const [tipoAgente, setTipoAgente] = useState('');
     const [productosElabora, setProductosElabora] = useState('');
     const [horasDiariasT, setHorasDiariasT] = useState('');
+    const [diasTrabajados, setDiasTrabajados] = useState('');
+    const [descansosFijos, setDescansosFijos] = useState('');
+    const [turno, setTurno] = useState('');
 
     return (
         <form action="" className="w-full p-4">
@@ -66,8 +69,42 @@ const AntecedentesLaborales = () => {
                         onChange={(e) => setHorasDiariasT(e.target.value)}
                     />
                 </div>
-
             </div>
+            <div className="flex justify-betwen mb-4">
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="diasTrabajados" className="block font-bold">
+                        Dias ala semana trabajados:
+                    </label>
+                    <input type="text" name="diasTrabajados" id="diasTrabajados"
+                        className="w-full border p-2"
+                        value={diasTrabajados}
+                        onChange={(e) => setDiasTrabajados(e.target.value)}
+                    />
+                </div>
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="descansosFijos" className="block font-bold">
+                        Descansos fijos o rolados:
+                    </label>
+                    <input type="text" name="descansosFijos" id="descansosFijos"
+                        className="w-full border p-2"
+                        value={descansosFijos}
+                        onChange={(e) => setDescansosFijos(e.target.value)}
+                    />
+                </div>
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="turno" className="block font-bold">
+                        Turno:
+                    </label>
+                    <input type="text" name="turno" id="turno"
+                        className="w-full border p-2"
+                        value={turno}
+                        onChange={(e) => setTurno(e.target.value)}
+                    />
+                </div>
+            </div>
+
         </form>
     );
 }
