@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Identificacion from "./FichaIdentificacion/identificacion";
 import AntecedentesLaborales from "./AntecentesLaboral/antecedentesLabotales";
 import PersonalPatologico from "./PersonalPatologico/antecedentePersonal";
+import HeredoFamiliar from "./antecedentesHeredoFam/antecedentesHeredoF";
 
 const Hcx1 = () => {
     return (
@@ -30,6 +31,7 @@ const Hcx1 = () => {
             <Identificacion />
             <AntecedentesLaborales />
             <PersonalPatologico />
+            <HeredoFamiliar />
         </>
     )
 }
