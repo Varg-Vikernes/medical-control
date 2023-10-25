@@ -69,14 +69,14 @@ const PersonalPatologico = () => {
                     <div>
                         <label htmlFor="tabaquismo" className="mr-2">
                             <input type="radio" name="tabaquismoSi" id="tabaquismoSi"
-                                value="Si" checked={tabaquismo == 'Si'}
+                                value="Si" checked={tabaquismo === 'Si'}
                                 onChange={(e) => setTabaquismo(e.target.value)}
                             />
                             Si
                         </label>
                         <label htmlFor="tabaquismo" className="mr-2">
                             <input type="radio" name="tabaquismoNo" id="tabaquismoNo"
-                                value="No" checked={tabaquismo == 'No'}
+                                value="No" checked={tabaquismo === 'No'}
                                 onChange={(e) => setTabaquismo(e.target.value)}
                             />
                             No
