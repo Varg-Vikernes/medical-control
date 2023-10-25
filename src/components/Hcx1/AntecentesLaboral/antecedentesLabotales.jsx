@@ -9,11 +9,18 @@ const AntecedentesLaborales = () => {
     const [diasTrabajados, setDiasTrabajados] = useState('');
     const [descansosFijos, setDescansosFijos] = useState('');
     const [turno, setTurno] = useState('');
-
+    const [puestoActividad, setPuestoActividad] = useState('');
+    const [accidentesTrabajo, setAccidentesTrabajo] = useState('');
+    const [incapacidad, setIncapacidad] = useState('');
+    const [examenLaboratorio, setExamenLaboratorio] = useState('');
+    const [actividadesExtra, setActividadesExtra] = useState('');
+    const [otros, setOtros] = useState('');
+    const [analisisErgonomico, setAnalisisErgonomico] = useState('');
+    const [cuales, setCuales] = useState('');
     return (
         <form action="" className="w-full p-4">
 
-            <h1 className="text-x1 font-sans mb-4"> Antecedentes Laborales. </h1>
+            <h1 className="text-xl  font-sans mb-4"> Antecedentes Laborales. </h1>
             {/* FORMULARIO ANTECEDENTES LABORALES */}
             <div className="flex-1 mr-4">
                 <label htmlFor="lugaresLaborales" className="block font-bold">
@@ -105,6 +112,97 @@ const AntecedentesLaborales = () => {
                 </div>
             </div>
 
+            <div className="flex justify-betwen mb-4">
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="puestoActividad" className="block font-bold">
+                        Puesto o actividad:
+                    </label>
+                    <input type="text" name="puestoActividad" id="puestoActividad"
+                        className="w-full border p-2"
+                        value={puestoActividad}
+                        onChange={(e) => setPuestoActividad(e.target.value)}
+                    />
+                </div>
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="accidentesTrabajo" className="block font-bold">
+                        Accidentes de trabajo:
+                    </label>
+                    <input type="text" name="accidentesTrabajo" id="accidentesTrabajo"
+                        className="w-full border p-2"
+                        value={accidentesTrabajo}
+                        onChange={(e) => setAccidentesTrabajo(e.target.value)}
+                    />
+                </div>
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="Incapacidad" className="block font-bold">
+                        Incapacidad:
+                    </label>
+                    <input type="text" name="Incapacidad" id="Incapacidad"
+                        className="w-full border p-2"
+                        value={incapacidad}
+                        onChange={(e) => setIncapacidad(e.target.value)}
+                    />
+                </div>
+            </div>
+
+            <div className="flex justify-betwen mb-4">
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="examenLaboratorio" className="block font-bold">
+                        Sele practico examen de laboratorio y RX:
+                    </label>
+                    <input type="text" name="examenLaboratorio" id="examenLaboratorio"
+                        className="w-full border p-2"
+                        value={examenLaboratorio}
+                        onChange={(e) => setExamenLaboratorio(e.target.value)}
+                    />
+                </div>
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="otros" className="block font-bold">
+                        Otros:                    </label>
+                    <input type="text" name="otros" id="otros"
+                        className="w-full border p-2"
+                        value={otros}
+                        onChange={(e) => setOtros(e.target.value)}
+                    />
+                </div>
+            </div>
+
+            <div className="flex justify-betwen mb-4">
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="actividadesExtra" className="block font-bold">
+                        Tienes actividades extralaborales:
+                    </label>
+                    <input type="text" name="actividadesExtra" id="actividadesExtra"
+                        className="w-full border p-2"
+                        value={actividadesExtra}
+                        onChange={(e) => setActividadesExtra(e.target.value)}
+                    />
+                </div>
+
+                <div className="flex-1 mr-4 ">
+                    <label htmlFor="cuales" className="block font-bold">
+                        Cuales:
+                    </label>
+                    <input type="text" name="otros" id="otros"
+                        className="w-full border p-2"
+                        value={cuales}
+                        onChange={(e) => setCuales(e.target.value)}
+                    />
+                </div>
+            </div>
+            <div className="flex-1 mr-4">
+                <label htmlFor="analisisErgonomico" className="block font-bold">
+                    Requiere analisis ergonomico:
+                </label>
+                <input type="text" name="analisisErgonomico" id="analisisErgonomico"
+                    className="w-full border p-2 w-full"
+                    value={analisisErgonomico}
+                    onChange={(e) => setAnalisisErgonomico(e.target.value)}
+                />
+            </div>
         </form>
     );
 }
