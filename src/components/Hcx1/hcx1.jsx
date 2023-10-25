@@ -2,6 +2,7 @@ import React from "react";
 import Primario from "./DatosPrimarios/primario";
 import Navbar from "../Navbar/Navbar";
 import Identificacion from "./FichaIdentificacion/identificacion";
+import AntecedentesLaborales from "./AntecentesLaboral/antecedentesLabotales";
 
 const Hcx1 = () => {
     return (
@@ -26,6 +27,7 @@ const Hcx1 = () => {
             {/* Aqui ya van los formularios */}
             <Primario />
             <Identificacion />
+            <AntecedentesLaborales />
         </>
     )
 }
