@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import * as React from 'react';
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom'
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 import Hcx1 from './components/Hcx1/hcx1';
+import Hcx2 from './components/Hcx2/hcx2';
+import Hcx3 from './components/Hcx3/hcx3';
+import Hcx4 from './components/Hcx4/hcx4';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: '/Hcx1',
+    element: <Hcx1 />
+  },
+  {
+    path: '/Hcx2',
+    element: <Hcx2 />
+  },
+  {
+    path: '/Hcx3',
+    element: <Hcx3 />
+  },
+  {
+    path: '/Hcx4',
+    element: <Hcx4 />
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Hcx1 />
+    <RouterProvider router={router} />
   </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
