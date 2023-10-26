@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 
-
-
-
-
 const HeredoFamiliar = (category) => {
 
     const [checklist, setChecklist] = useState({
+
         asmaticos: false,
         diabeticos: false,
         psiquiatrico: false,
