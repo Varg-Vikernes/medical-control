@@ -162,10 +162,73 @@ const AntPatologico = () => {
                                     <input type="checkbox" />
                                 </td>
                             </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Rubeola</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Otttis</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Varicela</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Escarlatina</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Venereas</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Tuberculosis</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Parotiditis</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Amigdalitis</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Bronquitis</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Otros</td>
+                                <td className="border p-2 w-40 text-center">
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            <label htmlFor="">Comentarios
+                <input type="text" name="" id="" />
+            </label>
         </>
     )
 }
