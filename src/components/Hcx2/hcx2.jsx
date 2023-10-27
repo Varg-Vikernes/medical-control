@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import AntPatologico from "./antececentesPatologicos/patologicos.component";
+import Obstretico from "./genico-Obstretico/obstretico.component";
 
 const Hcx2 = () => {
     return (
@@ -24,6 +25,7 @@ const Hcx2 = () => {
             </div>
             {/* Formularios */}
             <AntPatologico />
+            <Obstretico />
         </>
     )
 }
