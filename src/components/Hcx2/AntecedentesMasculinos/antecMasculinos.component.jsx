@@ -1,10 +1,10 @@
 import React from "react";
 
-const Obstretico = () => {
+const AntececenteMasculino = () => {
     return (
         <>
             <h1 className="text-x1 font-sans mb4">
-                Antececentes personales Patologicos
+                Antecedentes Masculinos
             </h1>
             <div className="flex justify-betwen mb-4">
                 <div className="flex-1 mr-4">
@@ -12,101 +12,82 @@ const Obstretico = () => {
                     <table className="table-auto  mx-auto my-4">
                         <tbody>
                             <tr>
-                                <td className="border p-2 w-80 text-center">Menarca</td>
+                                <td className="border p-2 w-80 text-center">Enfermedades de prostata</td>
                                 <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="menarca" id="menarca" />
+                                    <input type="checkbox" name="enfermProstata" id="enfermProstata" />
                                 </td>
                             </tr>
                             <tr>
-                                <td className="border p-2 w-40 text-center">Ritmo</td>
+                                <td className="border p-2 w-40 text-center">Desordenes reproductivo</td>
                                 <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="ritmo" id="ritmo" />
+                                    <input type="checkbox" name="desordenesRepro" id="desordenesRepro" />
                                 </td>
                             </tr>
                             <tr>
-                                <td className="border p-2 w-40 text-center">Ciclo Menstrual</td>
+                                <td className="border p-2 w-40 text-center">Dolor en testiculos</td>
                                 <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="cicloMenstrual" id="cicloMenstrual" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Caracteristicas</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="caracteristicas" id="caracteristicas" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Fum</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="fum" id="fum" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                {/* ------------------------------------- */}
-                <div className="flex-1 mr-4">
-                    <table className="table-auto mx-auto my-4">
-                        <tbody>
-                            <tr>
-                                <td className="border p-2 w-80 text-center">Inicio vida sexual activa</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="sexActiva" id="sexActiva" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Gestacion</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="gestacion" id="gestacion" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Partos</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="partos" id="partos" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Cesarea</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="cesarea" id="cesarea" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="border p-2 w-40 text-center">Aborto</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="aborto" id="aborto" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                {/* ------------------------------------- */}
-                <div className="flex-1 mr-4">
-                    <table className="table-auto mx-auto my-4">
-                        <tbody>
-                            <tr>
-                                <td className="border p-2 w-80 text-center">Control de feritlidad</td>
-                                <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="ctrlFertilidad" id="ctrlFertilidad" />
+                                    <input type="checkbox" name="dolorTesticulo" id="dolorTesticulo" />
                                 </td>
                             </tr>
                             <tr>
                                 <td className="border p-2 w-40 text-center">Otros</td>
                                 <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="otros" id="otros" />
+                                    <input type="checkbox" name="Otros" id="Otros" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {/* ------------------------------------- */}
+                <div className="flex-1 mr-4">
+                    <table className="table-auto mx-auto my-4">
+                        <tbody>
+                            <tr>
+                                <td className="border p-2 w-80 text-center">Orina frecuente Opaca</td>
+                                <td className="border p-2 w-20 text-center">
+                                    <input type="checkbox" name="orinaFrecuente" id="orinaFrecuente" />
                                 </td>
                             </tr>
                             <tr>
-                                <td className="border p-2 w-40 text-center">Infecciones</td>
+                                <td className="border p-2 w-40 text-center">Masa en testiculos</td>
                                 <td className="border p-2 w-20 text-center">
-                                    <input type="checkbox" name="infecciones" id="infecciones" />
+                                    <input type="checkbox" name="masaTesticulos" id="masaTesticulos" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Vasectomia</td>
+                                <td className="border p-2 w-20 text-center">
+                                    <input type="checkbox" name="Vasectomia" id="Vasectomia" />
                                 </td>
                             </tr>
                             <tr>
                                 <td className="border p-2 w-40 h-10 text-center"></td>
                                 <td className="border p-2 w-20 text-center">
-
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {/* ------------------------------------- */}
+                <div className="flex-1 mr-4">
+                    <table className="table-auto mx-auto my-4">
+                        <tbody>
+                            <tr>
+                                <td className="border p-2 w-80 text-center">Infeccion de pene</td>
+                                <td className="border p-2 w-20 text-center">
+                                    <input type="checkbox" name="infeccionPene" id="infeccionPene" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Infeccion de prostata</td>
+                                <td className="border p-2 w-20 text-center">
+                                    <input type="checkbox" name="infeccionProstata" id="infeccionProstata" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border p-2 w-40 text-center">Infeccion de testiculos</td>
+                                <td className="border p-2 w-20 text-center">
+                                    <input type="checkbox" name="infeccionTesticulos" id="infeccionTesticulos" />
                                 </td>
                             </tr>
                             <tr>
@@ -122,5 +103,4 @@ const Obstretico = () => {
         </>
     )
 }
-
-export default Obstretico;
+export default AntececenteMasculino
