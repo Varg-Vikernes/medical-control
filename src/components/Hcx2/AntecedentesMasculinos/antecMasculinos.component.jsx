@@ -3,7 +3,7 @@ import React from "react";
 const AntececenteMasculino = () => {
     return (
         <>
-            <h1 className="text-x1 font-sans mb4">
+            <h1 className="text-xl  font-sans mb-4">
                 Antecedentes Masculinos
             </h1>
             <div className="flex justify-betwen mb-4">

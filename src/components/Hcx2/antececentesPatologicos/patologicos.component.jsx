@@ -3,7 +3,7 @@ import React from "react";
 const AntPatologico = () => {
     return (
         <>
-            <h1 className="text-x1 font-sans mb4">
+            <h1 className="text-xl  font-sans mb-4">
                 Antececentes personales Patologicos
             </h1>
             <div className="flex justify-betwen mb-4">
