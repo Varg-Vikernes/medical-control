@@ -87,6 +87,37 @@ const ExploracionF = () => {
                         />
                     </div>
                 </div>
+                <div className="flex justify-betwen mb-4">
+                    <div className="flex-1 mr-4">
+                        <label htmlFor="Marcha" className="block font-bold">
+                            Marcha:
+                        </label>
+                        <input type="text" name="Marcha" id="Marcha"
+                            className="w-full border p-2"
+                            value={marcha} onChange={(e) => setMarcha(e.target.value)}
+                        />
+                    </div>
+                </div>
+                <div className="flex justify-betwen mb-4">
+                    <div className="flex-1 mr-4">
+                        <label htmlFor="movimientoAnorm" className="block font-bold">
+                            Movimiento Anormal:
+                        </label>
+                        <input type="text" name="movimientoAnorm" id="movimientoAnorm"
+                            className="w-full border p-2"
+                            value={movimientoAnorm} onChange={(e) => setMovimientoAnorm(e.target.value)}
+                        />
+                    </div>
+                    <div className="flex-1 mr-4">
+                        <label htmlFor="especificacionAnorm" className="block font-bold">
+                            Especificacion:
+                        </label>
+                        <input type="text" name="especificacionAnorm" id="especificacionAnorm"
+                            className="w-full border p-2"
+                            value={especificarAnorm} onChange={(e) => setEspecificacionAnorm(e.target.value)}
+                        />
+                    </div>
+                </div>
             </form>
         </>
     );
