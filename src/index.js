@@ -12,7 +12,7 @@ import Hcx4 from './components/Hcx4/hcx4';
 
 const router = createBrowserRouter([
   {
-    path: '/Hcx1',
+    path: '/',
     element: <Hcx1 />
   },
   {
