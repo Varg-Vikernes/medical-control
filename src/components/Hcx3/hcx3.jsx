@@ -1,9 +1,25 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
+import ExploracionF from "./exploracionFisica/exploracionFisica.component";
 
 const Hcx3 = () => {
     return (
         <>
-            <div className="bg-blue-500 text-white p-4">Mi componente con Tailwind CSS</div>
+            <Navbar />
+            <div className="container mx-auto p-4">
+                <div className="flex flex-wrap items-center">
+                    {/* Imagen de la empresa */}
+                    <div className="w-full md:w-1/2">
+                        <img src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
+                            alt="" className="w-40 h-24 object-cover font-sans" />
+                    </div>
+                    <div className="w-full md:w-1/2 p-4 text-center">
+                        <h1 className="text-4x2 font-bold">Examen padecimiento actual</h1>
+                    </div>
+                </div>
+            </div>
+            {/* Demas partes del formulario */}
+            <ExploracionF />
         </>
     )
 }
