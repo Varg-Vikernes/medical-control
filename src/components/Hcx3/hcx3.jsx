@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import ExploracionF from "./exploracionFisica/exploracionFisica.component";
+import Cara from "./craneo-Cara/craneo.component";
 
 const Hcx3 = () => {
     return (
@@ -20,6 +21,7 @@ const Hcx3 = () => {
             </div>
             {/* Demas partes del formulario */}
             <ExploracionF />
+            <Cara />
         </>
     )
 }
