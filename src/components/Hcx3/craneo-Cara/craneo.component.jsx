@@ -8,8 +8,15 @@ const Cara = () => {
     const [conductoAudi, setConductoAudi] = useState('')
     const [tabique, setTabique] = useState('');
     const [mucosa, setMucosa] = useState('');
-
-
+    const [timpano , setTimpano] = useState('');
+    const [cornetes , setCornetes ] = useState('');
+    const [ensias , setEnsias ] = useState('');
+    const [audicion , setAudicion ] = useState ('');
+    const [mucosas  , setMucosas] = useState ('');
+    const [dientes , setDientes ] = useState ('');
+    const [secreciones , setSecreciones] = useState('');
+    const [lengua , setLenguna ] = useState ('');
+    const [faringe , setFaringe ] = useState( '') ;
     return (
         <>
             <form action="" className="w-full p-4">
