@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import ExploracionF from "./exploracionFisica/exploracionFisica.component";
 import Cara from "./craneo-Cara/craneo.component";
 import Cuello from "./cuello-torax-abdomen/cuello.component";
+import Torax from "./cuello-torax-abdomen/torax.component";
 
 const Hcx3 = () => {
     return (
@@ -24,6 +25,7 @@ const Hcx3 = () => {
             <ExploracionF />
             <Cara />
             <Cuello />
+            <Torax />
         </>
     )
 }

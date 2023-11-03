@@ -16,7 +16,7 @@ const Cuello = () => {
                         <label htmlFor="piel" className="block font-bold">Piel:</label>
                         <input type="text" name="piel" id="piel"
                             className="w-full border p-2"
-                            value={piel} onChange={(e) => setPiel}
+                            value={piel} onChange={(e) => setPiel(e.target.value)}
                         />
                     </div>
                     <div className="flex-1 mr-4">
