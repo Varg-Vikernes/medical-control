@@ -37,13 +37,14 @@ const Cara = () => {
     const [mmmppSuperior, setMmmppSuperior] = useState('');
     const [reflejosOculares, setReflejosOculares] = useState('');
     const [mmmppInferior, setMmmppInferior] = useState('');
+    const [notasExploracion, setNotasExploracion] = useState('');
 
     return (
         <>
             <form action="" className="w-full p-4">
-                <h1 className="block font-bold">Craneo Cara</h1>
+                <h1 className="text-xl  font-sans mb-4">Craneo Cara</h1>
 
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
 
                     <div className="flex-1 mr-4">
                         <label htmlFor="oidos" className="block font-bold mb-1">Oidos</label>
@@ -67,7 +68,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mb-4">
+                <div className="flex justify-between mb-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="conductoAudi" className="block font-bold">Conducto auditivo</label>
                         <input type="text" name="ConductoAudi" id="ConductoAudi"
@@ -91,7 +92,7 @@ const Cara = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-betwen mb-4">
+                <div className="flex justify-between mb-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="timpano" className="font-bold block"> Timpano:</label>
                         <input type="text" name="timpano" id="timpano"
@@ -114,7 +115,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mb-4">
+                <div className="flex justify-between mb-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="audicion" className="block font-bold">Audicion</label>
                         <input type="text" name="audicion" id="audicion"
@@ -137,7 +138,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mb-4">
+                <div className="flex justify-between mb-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="secreciones" className="font-bold block">Secreciones:</label>
                         <input type="text" name="secreciones" id="secreciones"
@@ -160,7 +161,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="ojos" className="font-bold block">Ojos:</label>
                         <input type="text" name="ojos" id="ojos"
@@ -183,7 +184,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="parpados" className="font-bold block">Parpados :</label>
                         <input type="text" name="parpados" id="parpados"
@@ -200,7 +201,7 @@ const Cara = () => {
                     </div>
 
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="anexo" className="font-bold block">Anexo:</label>
                         <input type="text" name="anexo" id="anexo"
@@ -216,7 +217,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="conjuntiva" className="block font-bold">Conjuntiva</label>
                         <input type="text" name="conjuntiva" id="conjuntiva"
@@ -225,7 +226,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="esclerotica" className="block font-bold">Esclerotica</label>
                         <input type="text" name="esclerotica" id="esclerotica"
@@ -248,7 +249,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="camaraAnterior" className="block font-bold">Camaras anterior</label>
                         <input type="text" name="camaraAnterior" id="camaraAnterior"
@@ -271,7 +272,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="fondoOjo" className="block font-bold">Fondo de ojo:</label>
                         <input type="text" name="fondoOjo" id="fondoOjo"
@@ -287,7 +288,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="pupilas" className="block font-bold">Pupilas:</label>
                         <input type="text" name="pupilas" id="pupilas"
@@ -303,7 +304,7 @@ const Cara = () => {
                         />
                     </div>
                 </div>
-                <div className="flex justify-betwen mr-4">
+                <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="reflejoOcular" className="block font-bold">Reflejos oculares</label>
                         <input type="text" name="reflejoOcular" id="reflejoOcular"
@@ -317,6 +318,16 @@ const Cara = () => {
                             className="w-full border p-2"
                             value={mmmppInferior} onChange={(e) => setMmmppInferior(e.target.value)}
                         />
+                    </div>
+                </div>
+                <div className="flex justify-between">
+                    <div className="flex-1 mr-4">
+                        <label htmlFor="notasDeExploracion" className="block font-bold">Notas de exploracion</label>
+                        <input type="text" name="notasDeExploracion" id="notasDeExploracion"
+                            className="w-full border p-2"
+                            value={notasExploracion} onChange={(e) => setNotasExploracion(e.target.value)}
+                        />
+
                     </div>
                 </div>
             </form>

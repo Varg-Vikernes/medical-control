@@ -17,8 +17,8 @@ const ExploracionF = () => {
         <>
             <form action="" className="w-full p-4">
 
-                <h1 className="text-x1 font-sans mb-4">Padecimiento Actual</h1>
-                <h1 className="text-x1 font-sans mb-4">Exploracion fisica</h1>
+                <h1 className="text-xl  font-sans mb-4">Padecimiento Actual</h1>
+                <h1 className="text-xl  font-sans mb-4">Exploracion fisica</h1>
                 <div className="flex justify-betwen mb-4">
 
                     <div className="flex-1 mr-4">
