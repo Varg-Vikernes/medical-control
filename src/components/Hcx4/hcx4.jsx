@@ -1,6 +1,11 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Genitales from "./genitales/genitales.component";
+import ExtremidadesSuperiores from "./extremidades/superiores.component";
+import ExtremidadesInferiores from "./extremidades/inferiores.component";
+import ExploracionPsiconeurologica from "./exploracionPsico/exploracionPsico.component";
+import { Laboratorio } from "./exmLaboratorio/examenLaboratorio.component";
+
 
 const Hcx4 = () => {
     return (
@@ -24,6 +29,10 @@ const Hcx4 = () => {
             </div>
             {/* Formularios */}
             <Genitales />
+            <ExtremidadesSuperiores />
+            <ExtremidadesInferiores />
+            <ExploracionPsiconeurologica />
+            <Laboratorio />
         </>
     )
 }
