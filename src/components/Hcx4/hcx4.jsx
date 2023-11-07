@@ -5,6 +5,7 @@ import ExtremidadesSuperiores from "./extremidades/superiores.component";
 import ExtremidadesInferiores from "./extremidades/inferiores.component";
 import ExploracionPsiconeurologica from "./exploracionPsico/exploracionPsico.component";
 import { Laboratorio } from "./exmLaboratorio/examenLaboratorio.component";
+import { Diagnostico } from "./Diagnostico/diagnostico.component";
 
 
 const Hcx4 = () => {
@@ -33,6 +34,7 @@ const Hcx4 = () => {
             <ExtremidadesInferiores />
             <ExploracionPsiconeurologica />
             <Laboratorio />
+            <Diagnostico />
         </>
     )
 }
