@@ -9,6 +9,7 @@ import Hcx1 from './components/Hcx1/hcx1';
 import Hcx2 from './components/Hcx2/hcx2';
 import Hcx3 from './components/Hcx3/hcx3';
 import Hcx4 from './components/Hcx4/hcx4';
+import { Login } from './components/Auth/login.component';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/Hcx4',
     element: <Hcx4 />
+  },
+  {
+    path: '/login',
+    element: <Login />
   }
 ]);
 
