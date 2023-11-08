@@ -11,9 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(102, 226, 255);
   background: linear-gradient(90deg, rgba(102, 226, 255, 1) 0%, rgba(85, 207, 191, 1) 100%, rgba(255, 255, 255, 0.9332107843137255) 100%);
+  /**/
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.fondo {
+  background-image: url(https://i.pinimg.com/originals/ae/4a/8e/ae4a8e9f23e4c7c346ad18bfbe2dc413.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
