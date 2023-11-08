@@ -11,7 +11,7 @@ const Hcx1 = () => {
         <>
             <Navbar />
             <div className="container mx-auto p-4">
-                <div className="flex flex-wrap items-center">
+                <div className="flex flex-wrap items-center p-10">
                     {/* Imagen de la empresa */}
                     <div className="w-full md:w-1/2">
                         <img src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
