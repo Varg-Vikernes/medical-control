@@ -74,14 +74,12 @@ const Navbar = () => {
             <div className="flex flex-col flex-1 overflow-hidden w-full">
                 <div className="bg-gradient-to-r from-green-400 to-cyan-500 p-2">
                     <button
-                        className="text-xl text-white cursor-pointer"
+                        className="text-xl text-white cursor-pointer w-200"
                         onClick={toggleSidebar}
                     >
                         ☰
                     </button>
-                    <span className="font-italic text-2xl text-white ml-4">
-                        Alfaparf Milano
-                    </span>
+
                 </div>
             </div>
         </div>
