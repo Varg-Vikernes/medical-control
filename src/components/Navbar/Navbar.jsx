@@ -1,68 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-const Navbar = () => {
 
+const Navbar = () => {
     const Location = useLocation();
-    //Funcion para verificar si una ruta esta activa
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
+    const closeSidebar = () => {
+        setSidebarOpen(false);
+    };
+
     const isActive = (path) => {
         return Location.pathname === path ? "active" : "";
     };
 
     return (
-        <>
-            <div className="fixed w-full">
-                <nav className="navbar" style={{
-                    background: 'rgb(38,255,140)',
-                    backgroundImage: 'linear-gradient(90deg, rgba(38,255,140,1) 0%, rgba(85,207,191,1) 100%, rgba(255,255,255,0.9332107843137255) 100%)'
-                }}>
-                    <div className="container mx-auto p-2">
-                        <div className="flex items-center justify-between">
-                            <span className="font-italic text-2xl">Alfaparf Milano</span>
-
-                            <div className="flex ">
-                                <ul className="flex space-x-4">
-                                    <li className={`nav-item ${isActive("/")}`}>
-                                        <a className="nav-link" href="/" to="/">
-                                            Historia clinica
-                                        </a>
-                                    </li>
-                                    <li className={`nav-item ${isActive("/Hcx2")}`}>
-                                        <a className="nav-link" href="/Hcx2" to="/Hcx2">
-                                            Examen medico
-                                        </a>
-                                    </li>
-                                    <li className={`nav-item ${isActive("/Hcx3")}`}>
-                                        <a className="nav-link" href="/Hcx3" to="Hcx3">
-                                            Padecimiento actual
-                                        </a>
-                                    </li>
-                                    <li className={`nav-item ${isActive("/Hcx4")}`}>
-                                        <a className="nav-link" href="/Hcx4" to="/Hcx4">
-                                            Examen medico extremidades
-                                        </a>
-                                    </li>
-                                    <li className={`nav-item ${isActive("/Hcx4")}`}>
-                                        <a className="nav-link" href="/login" to="/login">
-                                            Iniciar sesion
-                                        </a>
-                                    </li>
-
-                                </ul>
-                                <form className="form-inline ml-4">
-                                    <button
-                                        className="btn btn-outline-success my-2 my-sm-0"
-                                        type="submit"
-                                    >
-                                        Search
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+        <div className="flex h-screen">
+            {sidebarOpen && (
+                <div
+                    className="w-64 bg-gradient-to-b from-green-400 to-cyan-500 p-4"
+                    style={{ minWidth: "16rem" }}
+                >
+                    <button
+                        className="text-xl text-white cursor-pointer"
+                        onClick={closeSidebar}
+                    >
+                        &times;
+                    </button>
+                    <ul className="flex flex-col space-y-4 mt-4">
+                        <li className={`nav-item ${isActive("/")}`} onClick={closeSidebar}>
+                            <a className="nav-link" href="/" to="/">
+                                Historia clinica
+                            </a>
+                        </li>
+                        <li
+                            className={`nav-item ${isActive("/Hcx2")}`}
+                            onClick={closeSidebar}
+                        >
+                            <a className="nav-link" href="/Hcx2" to="/Hcx2">
+                                Examen medico
+                            </a>
+                        </li>
+                        <li
+                            className={`nav-item ${isActive("/Hcx3")}`}
+                            onClick={closeSidebar}
+                        >
+                            <a className="nav-link" href="/Hcx3" to="Hcx3">
+                                Padecimiento actual
+                            </a>
+                        </li>
+                        <li
+                            className={`nav-item ${isActive("/Hcx4")}`}
+                            onClick={closeSidebar}
+                        >
+                            <a className="nav-link" href="/Hcx4" to="/Hcx4">
+                                Examen medico extremidades
+                            </a>
+                        </li>
+                        <li
+                            className={`nav-item ${isActive("/login")}`}
+                            onClick={closeSidebar}
+                        >
+                            <a className="nav-link" href="/login" to="/login">
+                                Iniciar sesion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            )}
+            <div className="flex flex-col flex-1 overflow-hidden w-full">
+                <div className="bg-gradient-to-r from-green-400 to-cyan-500 p-2">
+                    <button
+                        className="text-xl text-white cursor-pointer"
+                        onClick={toggleSidebar}
+                    >
+                        ☰
+                    </button>
+                    <span className="font-italic text-2xl text-white ml-4">
+                        Alfaparf Milano
+                    </span>
+                </div>
             </div>
-        </>
+        </div>
     );
-}
+};
 
 export default Navbar;

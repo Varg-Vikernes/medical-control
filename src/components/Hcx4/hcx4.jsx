@@ -24,7 +24,6 @@ const Hcx4 = () => {
                     {/* Texto que identifica el tipo de formulario*/}
                     <div className="w-full md:w-1/2 p-4 text-center">
                         <h1 className="text-4x2 font-bold">Historia Clinica ---  Servicio Medico</h1>
-
                     </div>
                 </div>
             </div>
