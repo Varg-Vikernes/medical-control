@@ -52,6 +52,7 @@ const Hcx1 = () => {
                                         />
                                     </div>
                                     {/* Texto que identifica el tipo de formulario*/}
+
                                     <div className="w-full md:w-1/2 p-4 text-center">
                                         <h1 className="text-4x2 font-bold">
                                             Historia Clinica --- Servicio Medico
@@ -60,14 +61,18 @@ const Hcx1 = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Aquí van los formularios */}
-                        <Primario onSubmit={handleActualizarDatosPrimarios} />
-                        <Identificacion onSubmit={handleActualizarIdentidicacion} />
-                        <AntecedentesLaborales />
-                        <PersonalPatologico />
-                        <HeredoFamiliar />
+                        <div className="overflow-y-scroll h-screen">
 
-                        <button onClick={handleConsolidateData}>Enviar datos por consola</button>
+
+                            {/* Aquí van los formularios */}
+                            <Primario onSubmit={handleActualizarDatosPrimarios} />
+                            <Identificacion onSubmit={handleActualizarIdentidicacion} />
+                            <AntecedentesLaborales />
+                            <PersonalPatologico />
+                            <HeredoFamiliar />
+
+                            <button onClick={handleConsolidateData}>Enviar datos por consola</button>
+                        </div>
                     </div>
                 </div>
             </div>
