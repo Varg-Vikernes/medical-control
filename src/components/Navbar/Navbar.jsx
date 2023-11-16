@@ -33,7 +33,7 @@ const Navbar = () => {
                             &times;
                         </button>
                         <ul className="flex flex-col space-y-4 mt-4 p-10">
-                            <img src="" />
+
                             <li className={`nav-item ${isActive("/")}`} onClick={closeSidebar}>
                                 <a className="nav-link" href="/" to="/">
                                     Historia clinica
