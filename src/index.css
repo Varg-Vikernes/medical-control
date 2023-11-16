@@ -30,6 +30,13 @@ code {
   background-image: url(https://th.bing.com/th/id/R.c45466caccc52c244a190f5baf6575d0?rik=I7iFj%2blfn2Pogg&pid=ImgRaw&r=0);
 }
 
+.sideBarFondo {
+  background-image: url(https://th.bing.com/th/id/R.63fbec70d68eaf8cf089b7272fed2bd4?rik=6jcBGPvjVUcLKg&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 input {
   border-radius: 12px;
 }
