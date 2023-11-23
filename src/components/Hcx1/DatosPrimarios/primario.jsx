@@ -15,10 +15,9 @@ const Primario = ({ onSubmit }) => {
     }
     return (
         <>
-
-            <form action="" className="w-full p-4" onSubmit={handleForSubmit}>
-                <div className="border rounded-lg p-8 shadow-md bg-white">
-                    <div className="flex justify-between mb-4">
+            <form action="" className="" onSubmit={handleForSubmit}>
+                <div className="border Form ">
+                    <div className="flex justify-between ">
                         <div className="flex-1 mr-4">
                             <label htmlFor="examenMedico" className="block font-bold">Examen Medico:</label>
                             <input type="text" className="w-full border p-2" id="examenMedico"
@@ -50,7 +49,9 @@ const Primario = ({ onSubmit }) => {
                             />
                         </div>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <div className="buton">
+                        <button type="submit" className="Button-EviarDatos border">Enviar</button>
+                    </div>
                 </div>
             </form>
         </>

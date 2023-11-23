@@ -35,13 +35,11 @@ const Hcx1 = () => {
         <>
 
             <div className="formulariosFondo">
+                <Navbar />
                 <div className="flex">
-                    <div className="w-auto ">
-                        <Navbar className="w-auto" />
-                    </div>
                     <div className="flex-1 flex flex-col">
-                        <div className="container mx-auto p-7">
-                            <div className="border rounded-lg  shadow-md bg-white">
+                        <div className="container mx-auto">
+                            <div className="border rounded-lg shadow-md Presentacion">
                                 <div className="flex flex-wrap items-center p-10">
                                     {/* Imagen de la empresa */}
                                     <div className="w-full md:w-1/2">
@@ -53,7 +51,7 @@ const Hcx1 = () => {
                                     </div>
                                     {/* Texto que identifica el tipo de formulario*/}
 
-                                    <div className="w-full md:w-1/2 p-4 text-center">
+                                    <div className="w-full md:w-1/2 text-center">
                                         <h1 className="text-4x2 font-bold">
                                             Historia Clinica --- Servicio Medico
                                         </h1>
@@ -61,21 +59,17 @@ const Hcx1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="overflow-y-scroll h-screen">
 
-
-                            {/* Aquí van los formularios */}
-                            <Primario onSubmit={handleActualizarDatosPrimarios} />
-                            <Identificacion onSubmit={handleActualizarIdentidicacion} />
-                            <AntecedentesLaborales />
-                            <PersonalPatologico />
-                            <HeredoFamiliar />
-
-                            <button onClick={handleConsolidateData}>Enviar datos por consola</button>
-                        </div>
+                        {/* Aquí van los formularios */}
+                        <Primario onSubmit={handleActualizarDatosPrimarios} />
+                        <Identificacion onSubmit={handleActualizarIdentidicacion} />
+                        <AntecedentesLaborales />
+                        <PersonalPatologico />
+                        <HeredoFamiliar />
+                        <button onClick={handleConsolidateData} className="Button-EviarDatos">Enviar datos por consola</button>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

@@ -29,7 +29,7 @@ const Identificacion = ({ onSubmit }) => {
 
     return (
         <form action="" className="w-full p-4" onSubmit={handleForSubmit}>
-            <div className="border rounded-lg p-8 shadow-md bg-white">
+            <div className="border rounded-lg p-8 shadow-md Form-Identificacion">
                 <h1 className="text-xl  font-sans mb-4">Ficha de identificacion</h1>
                 <div className="flex justify-between mb-4">
 

@@ -18,8 +18,8 @@ const AntecedentesLaborales = () => {
     const [analisisErgonomico, setAnalisisErgonomico] = useState('');
     const [cuales, setCuales] = useState('');
     return (
-        <form action="" className="w-full p-4">
-            <div className="border rounded-lg p-8 shadow-md bg-white">
+        <form action="" className="Form-Antecedentes">
+            <div className="border rounded-lg  shadow-md ">
                 <h1 className="text-xl  font-sans mb-4"> Antecedentes Laborales. </h1>
                 {/* FORMULARIO ANTECEDENTES LABORALES */}
                 <div className="flex-1 mr-4">

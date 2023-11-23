@@ -17,8 +17,8 @@ const PersonalPatologico = () => {
     const [inmunizaciones, setInmunizaciones] = useState('');
     const [actividadesDepor, setActividadesDepor] = useState('');
     return (
-        <form action="" className="w-full p-4">
-            <div className="border rounded-lg p-8 shadow-md bg-white">
+        <form action="" className=" Form-AntecedentesPersonales">
+            <div className="border rounded-lg p-8 shadow-md ">
                 <h1 className="text-xl  font-sans mb-4">Antecedentes personales no Patologicos</h1>
                 <div className="flex justify-betwen mb-4">
                     <div className="flex-1 mr-4">

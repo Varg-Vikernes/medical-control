@@ -42,8 +42,8 @@ const HeredoFamiliar = (category) => {
     return (
         <>
 
-            <div className="container mx-auto p-4">
-                <div className="border rounded-lg p-8 shadow-md bg-white">
+            <div className="container Form-AntecedentesHeredo">
+                <div className="border rounded-lg p-8 shadow-md  ">
                     <h1 className="text-xl  font-sans mb-4">Antecedentes heredo Familiares</h1>
                     <table className="table-auto border">
                         <thead>
