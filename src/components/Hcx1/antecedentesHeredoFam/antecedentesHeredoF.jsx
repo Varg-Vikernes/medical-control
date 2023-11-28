@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-const HeredoFamiliar = (category) => {
+const HeredoFamiliar = () => {
 
     const [checklist, setChecklist] = useState({
-
         asmaticos: false,
         diabeticos: false,
         psiquiatrico: false,
@@ -20,24 +19,12 @@ const HeredoFamiliar = (category) => {
         sifiliticos: false,
         ulcerosos: false,
         litiasicos: false,
-        //        /*  Aqui van los familiares que tengan algo de eso *
         padre: false,
         madre: false,
         hermano: false,
         hijo: false,
         otros: false,
-    })
-    if (category === 'padre' || category === 'madre' ||
-        category === 'hermano' || category === 'hijo' || category === 'otro') {
-        if (checklist.padre || checklist.madre || checklist.hermano || checklist.hijo || checklist.otros) {
-            setChecklist({
-                checklist,
-                asmaticos: true,
-                diabeticos: true
-            });
-        }
-    }
-
+    });
 
     return (
         <>
@@ -63,35 +50,35 @@ const HeredoFamiliar = (category) => {
                                     <input
                                         type="checkbox"
                                         checked={checklist.asmaticos}
-                                        onChange={() => HeredoFamiliar('asmaticos')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                                 <td className="border p-2 w-40 text-center">
                                     <input
                                         type="checkbox"
                                         checked={checklist.asmaticos}
-                                        onChange={() => HeredoFamiliar('asmaticos')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                                 <td className="border p-2 w-40 text-center">
                                     <input
                                         type="checkbox"
                                         checked={checklist.asmaticos}
-                                        onChange={() => HeredoFamiliar('asmaticos')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                                 <td className="border p-2 w-40 text-center">
                                     <input
                                         type="checkbox"
                                         checked={checklist.asmaticos}
-                                        onChange={() => HeredoFamiliar('asmaticos')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                                 <td className="border p-2 center w-40 text-center">
                                     <input
                                         type="checkbox"
                                         checked={checklist.asmaticos}
-                                        onChange={() => HeredoFamiliar('asmaticos')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                             </tr>
@@ -101,7 +88,7 @@ const HeredoFamiliar = (category) => {
                                     <input
                                         type="checkbox"
                                         checked={checklist.diabeticos}
-                                        onChange={() => HeredoFamiliar('diabetico')}
+                                        onChange={() => HeredoFamiliar(true)}
                                     />
                                 </td>
                                 <td className="border p-2 w-40 text-center">

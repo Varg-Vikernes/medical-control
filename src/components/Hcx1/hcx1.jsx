@@ -7,40 +7,60 @@ import HeredoFamiliar from "./antecedentesHeredoFam/antecedentesHeredoF";
 import Navbar from "../Navbar/Navbar";
 
 const Hcx1 = () => {
-    const [datosFormulario, setDatosformulario] = useState({
-        Primario: {},
-        Identificacion: {}
-    });
+    //manejo de estados de los campos 
+    const [datosFormulario, setDatosformulario] = useState({ Primario: {} });
+    const [datosIdenti, setDatosIdenti] = useState({ Identificacion: {} });
+    const [personalPato, setDatosPersonalPato] = useState({ PersonalPatologico: {} })
+    //Obtenemos los datos 
     const handleActualizarDatosPrimarios = (DatosPrimarios) => {
         setDatosformulario({
-            datosFormulario,
+            ...datosFormulario,
             Primario: DatosPrimarios
         })
     }
     const handleActualizarIdentidicacion = (datosIdentificacion) => {
-        setDatosformulario({
-            datosFormulario,
+        setDatosIdenti({
+            datosIdenti,
             Identificacion: datosIdentificacion
         })
     }
+    const handleActulizarAntecedentesLaborales = (datosAntecedentesLaborales) => {
+        setDatosformulario({
+            ...datosFormulario,
+            AntecedentesLaborales: datosAntecedentesLaborales
+        })
+    }
+    const hanldeActualizarPersonalPato = (datosPersonalPatologico) => {
+        setDatosPersonalPato({
+            personalPato,
+            PersonalPatologico: datosPersonalPatologico
+        })
+    }
+    //Mandamos los datos por consola
     const handleConsolidateData = () => {
         console.log('datos por consola', {
             datosFormulario: datosFormulario.Primario
         });
         console.log('datos de identificacion', {
-            datosFormulario: datosFormulario.Identificacion
+            datosIdenti: datosIdenti.Identificacion
+        })
+        console.log('Antecedentes Laborales datos', {
+            datosFormulario: datosFormulario.AntecedentesLaborales
+        })
+        console.log('Personal Patologico', {
+            personalPato: personalPato.PersonalPatologico
         })
     }
     return (
         <>
 
+            <Navbar />
             <div className="formulariosFondo">
-                <Navbar />
                 <div className="flex">
-                    <div className="flex-1 flex flex-col">
+                    <div className="flex-1 flex flex-col ">
                         <div className="container mx-auto">
                             <div className="border rounded-lg shadow-md Presentacion">
-                                <div className="flex flex-wrap items-center p-10">
+                                <div className="flex flex-wrap items-center p-10 mr-10">
                                     {/* Imagen de la empresa */}
                                     <div className="w-full md:w-1/2">
                                         <img
@@ -63,8 +83,8 @@ const Hcx1 = () => {
                         {/* Aquí van los formularios */}
                         <Primario onSubmit={handleActualizarDatosPrimarios} />
                         <Identificacion onSubmit={handleActualizarIdentidicacion} />
-                        <AntecedentesLaborales />
-                        <PersonalPatologico />
+                        <AntecedentesLaborales onSubmit={handleActulizarAntecedentesLaborales} />
+                        <PersonalPatologico onSubmit={hanldeActualizarPersonalPato} />
                         <HeredoFamiliar />
                         <button onClick={handleConsolidateData} className="Button-EviarDatos">Enviar datos por consola</button>
                     </div>

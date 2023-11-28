@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PersonalPatologico = () => {
+const PersonalPatologico = ({ onSubmit }) => {
     const [habitacion, setHabitacion] = useState('');
     const [habitadaPor, setHabitadaPor] = useState('');
     const [noHabitacion, setNoHabitacion] = useState('');
@@ -16,8 +16,19 @@ const PersonalPatologico = () => {
     const [alimentacion, setAlimentacion] = useState('');
     const [inmunizaciones, setInmunizaciones] = useState('');
     const [actividadesDepor, setActividadesDepor] = useState('');
+
+    const handleSubmint = (e) => {
+        e.preventDefault();
+        onSubmit({
+            habitacion, habitadaPor, noHabitacion, animalesEnCasa
+            , tabaquismo, noAños, cantidadPorDia, alcoholismo, noAñosAlcohol
+            , frecuencia, toxicomania, higiene, alimentacion, inmunizaciones
+            , actividadesDepor
+        })
+    }
+
     return (
-        <form action="" className=" Form-AntecedentesPersonales">
+        <form action="" onSubmit={handleSubmint} className=" Form-AntecedentesPersonales">
             <div className="border rounded-lg p-8 shadow-md ">
                 <h1 className="text-xl  font-sans mb-4">Antecedentes personales no Patologicos</h1>
                 <div className="flex justify-betwen mb-4">
@@ -195,6 +206,7 @@ const PersonalPatologico = () => {
                         />
                     </div>
                 </div>
+                <button type="submit">Enviar datos </button>
             </div>
         </form>
     )

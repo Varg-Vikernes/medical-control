@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AntecedentesLaborales = () => {
+const AntecedentesLaborales = ({ onSubmit }) => {
     const [lugaresLaborlaes, setLugaresLaborales] = useState('');
     const [lugarDesempeño, setLugarDesempeño] = useState('');
     const [tipoAgente, setTipoAgente] = useState('');
@@ -17,8 +17,19 @@ const AntecedentesLaborales = () => {
     const [otros, setOtros] = useState('');
     const [analisisErgonomico, setAnalisisErgonomico] = useState('');
     const [cuales, setCuales] = useState('');
+
+    //Recopilar la informacion de los datos
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSubmit({
+            lugaresLaborlaes, lugarDesempeño, tipoAgente, productosElabora
+            , horasDiariasT, diasTrabajados, descansosFijos, turno, puestoActividad
+            , accidentesTrabajo, incapacidad, examenLaboratorio, actividadesExtra
+            , otros, analisisErgonomico, cuales
+        })
+    }
     return (
-        <form action="" className="Form-Antecedentes">
+        <form action="" onSubmit={handleSubmit} className="Form-Antecedentes">
             <div className="border rounded-lg  shadow-md ">
                 <h1 className="text-xl  font-sans mb-4"> Antecedentes Laborales. </h1>
                 {/* FORMULARIO ANTECEDENTES LABORALES */}
@@ -203,6 +214,7 @@ const AntecedentesLaborales = () => {
                         onChange={(e) => setAnalisisErgonomico(e.target.value)}
                     />
                 </div>
+                <button type="submit">Enviar Datos</button>
             </div>
         </form>
     );

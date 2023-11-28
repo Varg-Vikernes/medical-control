@@ -37,6 +37,7 @@ const Hcx2 = () => {
                     <AntececenteMasculino />
                     <AntecedentesPorAparatos />
                 </div>
+
             </div>
         </>
     )

@@ -9,8 +9,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-green-400 to-cyan-500 p-2">
-            <ul className="flex space-x-4 p-2">
+        <div className="bg-gradient-to-r from-green-400 to-cyan-500 p-2 fixed w-full top-0 z-50 mb-20">
+            <ul className="flex space-x-10 p-2">
                 <img
                     src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
                     alt=""
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className={`nav-item ml-auto ${isActive("/login")}`}>
-                    <Link className="nav-link" to="/login">
+                    <Link className="nav-link x-10" to="/login">
                         Iniciar sesion
                     </Link>
                 </li>
