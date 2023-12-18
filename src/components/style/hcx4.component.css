@@ -1,0 +1,15 @@
+.container-form {
+    width: 1100px;
+    margin: 0 auto; /* Establece los márgenes izquierdo y derecho a 'auto' */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    border-radius: 10px;
+
+  }
+  .formulario_hcx4{
+    background-image: url('../img/imgfondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

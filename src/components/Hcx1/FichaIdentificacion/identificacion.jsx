@@ -26,11 +26,22 @@ const Identificacion = ({ onSubmit }) => {
             domicilio
         })
     }
+    const [mostrarOcultar , setMostrarOcultar] = useState(true)
+
+    const toogleMO = () =>{
+        setMostrarOcultar(!mostrarOcultar)
+    }
 
     return (
+        <>
+        <button onClick={toogleMO} className="cta" > 
+          <span> <b> {mostrarOcultar ? "Introduzca los datos" : "Ficha de identificacion"}</b></span>
+ 
+    </button>
+    { mostrarOcultar && (
         <form action="" className="w-full p-4" onSubmit={handleForSubmit}>
             <div className="border rounded-lg p-8 shadow-md Form-Identificacion">
-                <h1 className="text-xl  font-sans mb-4">Ficha de identificacion</h1>
+                <h1 className="text-xl  font-sans mb-4 title">Ficha de identificacion</h1>
                 <div className="flex justify-between mb-4">
 
                     <div className="flex-1 mr-4">
@@ -171,7 +182,9 @@ const Identificacion = ({ onSubmit }) => {
                 </div>
                 <button type="submit">Enviar</button>
             </div>
-        </form >
+        </form >  
+    )}
+    </>
     );
 }
 export default Identificacion;

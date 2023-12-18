@@ -6,18 +6,18 @@ import ExtremidadesInferiores from "./extremidades/inferiores.component";
 import ExploracionPsiconeurologica from "./exploracionPsico/exploracionPsico.component";
 import { Laboratorio } from "./exmLaboratorio/examenLaboratorio.component";
 import { Diagnostico } from "./Diagnostico/diagnostico.component";
-
+import '../style/hcx4.component.css'
 
 const Hcx4 = () => {
     return (
         <>
-            <div className="flex">
+            <div className="flex formulario_hcx4">
                 <div className="w-auto ">
                     <Navbar className="w-auto" />
                 </div>
-                <div className="flex-1 flex flex-col">
-                    <div className="container mx-auto p-7">
-                        <div className="flex flex-wrap items-center p-10">
+                <div className="flex-1 flex flex-col ">
+                    <div className="container mx-auto p-10">
+                        <div className="flex flex-wrap items-center p-5 ">
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
@@ -27,7 +27,7 @@ const Hcx4 = () => {
                                 />
                             </div>
                             {/* Texto que identifica el tipo de formulario*/}
-                            <div className="w-full md:w-1/2 p-4 text-center">
+                            <div className="w-full md:w-1/2 p-20 text-center">
                                 <h1 className="text-4x2 font-bold">
                                     Historia Clinica --- Servicio Medico
                                 </h1>
@@ -35,12 +35,14 @@ const Hcx4 = () => {
                         </div>
                     </div>
                     {/* Formularios */}
+                    <div className="container-form bg-white">
                     <Genitales />
                     <ExtremidadesSuperiores />
                     <ExtremidadesInferiores />
                     <ExploracionPsiconeurologica />
                     <Laboratorio />
                     <Diagnostico />
+                    </div>
                 </div>
             </div>
         </>

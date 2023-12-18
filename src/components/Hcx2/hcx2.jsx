@@ -4,17 +4,18 @@ import AntPatologico from "./antececentesPatologicos/patologicos.component";
 import Obstretico from "./genico-Obstretico/obstretico.component";
 import AntececenteMasculino from "./AntecedentesMasculinos/antecMasculinos.component";
 import AntecedentesPorAparatos from "./InterrogatorioPorAparatos/interrogatorio.component";
+import '../style/hcx2.component.css'
 
 const Hcx2 = () => {
     return (
         <>
-            <div className="flex">
+            <div className="flex formulario_hcx2">
                 <div className="w-auto ">
-                    <Navbar className="w-auto" />
+                    <Navbar className="p-10" />
                 </div>
-                <div className="flex-1 flex flex-col">
-                    <div className="container mx-auto p-7">
-                        <div className="flex flex-wrap items-center p-10">
+                <div className="flex-1 flex flex-col ">
+                    <div className="container mx-auto p-10">
+                        <div className="flex flex-wrap items-center p-5 ">
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
@@ -24,18 +25,21 @@ const Hcx2 = () => {
                                 />
                             </div>
                             {/* Texto que identifica el tipo de formulario*/}
-                            <div className="w-full md:w-1/2 p-4 text-center">
+                            <div className="w-full md:w-1/2 p-20 text-center">
                                 <h1 className="text-4x2 font-bold">
                                     Historia Clinica --- Servicio Medico
                                 </h1>
                             </div>
                         </div>
                     </div>
+                    <div className="container-form bg-white">
                     {/* Formularios */}
                     <AntPatologico />
                     <Obstretico />
                     <AntececenteMasculino />
                     <AntecedentesPorAparatos />
+                 <button className="button">Enviar datos por consola</button>
+                    </div>
                 </div>
 
             </div>

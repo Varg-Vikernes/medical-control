@@ -9,9 +9,20 @@ const Abdomen = () => {
     const [viceronmegallas, setViceronmegallas] = useState('')
     const [peristalis, setPeristalis] = useState('');
     const [notaDeExploracion, setNotadeExploracion] = useState('');
+    
+    const [mostrarOcultar, setMostrarOcultar] = useState(false);
+
+    const toogleMO = () => {
+        setMostrarOcultar(!mostrarOcultar)
+    }    
     return (
         <>
-            <forrm className="w-full p-2">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingresa los datos correctamente" : "Abdomen"}</b></span>
+        </button>
+        {
+            mostrarOcultar && (
+                <forrm className="w-full p-2">
                 <h1 className="text-xl  font-sans mr-4"> Abdomen. </h1>
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
@@ -70,6 +81,9 @@ const Abdomen = () => {
                     </div>
                 </div>
             </forrm>
+            )
+        }
+           
         </>
     )
 }

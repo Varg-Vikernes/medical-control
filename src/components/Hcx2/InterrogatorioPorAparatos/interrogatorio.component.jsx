@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AntecedentesPorAparatos = () => {
+    const [mostrarOcultar, setMostrarOcultar] = useState(true);
+        const toogleMO =() =>{
+            setMostrarOcultar(!mostrarOcultar)
+        }
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Introduzca los datos " : "Interrohatorio por Aparatos y Sistemas"}</b></span>
+        </button>
+        {
+            mostrarOcultar && (
+                <form action="" className="w-full p-4">
 
-                <h1 className="text-xl  font-sans mb-4">Interrogatorio por aparatos y sistemas </h1>
+                <h1 className="text-xl  font-sans mb-4 title">Interrogatorio por aparatos y sistemas </h1>
                 <div className="flex-1 mr-4">
                     <label htmlFor="Digestivo" className="block font-bold">
                         Digestivo:
@@ -79,7 +88,10 @@ const AntecedentesPorAparatos = () => {
                     />
                 </div>
             </form>
-        </>
+
+            )
+        }
+                    </>
     )
 }
 export default AntecedentesPorAparatos

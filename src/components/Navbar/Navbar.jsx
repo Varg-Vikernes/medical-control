@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import dobos from '../img/dobos.png'
+import '../style/nabvar.component.css'
 
 const Navbar = () => {
     const location = useLocation();
@@ -9,34 +11,34 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-green-400 to-cyan-500 p-2 fixed w-full top-0 z-50 mb-20">
-            <ul className="flex space-x-10 p-2">
+        <div className="font p-2 fixed w-full top-0 z-50 mb-20">
+            <ul className="flex space-x-9 p-1">
                 <img
-                    src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
+                    src={dobos}
                     alt=""
-                    className="w-60 h-14 object-cover font-sans "
+                    className="w-70 h-10 object-cover font-sans "
                 />
-                <li className={`nav-item ${isActive("/")}`}>
+                <li className={`nav-item p-1 ${isActive("/")}`}>
                     <Link className="nav-link" to="/">
                         Historia clinica
                     </Link>
                 </li>
-                <li className={`nav-item ${isActive("/Hcx2")}`}>
+                <li className={`nav-item p-1 ${isActive("/Hcx2")}`}>
                     <Link className="nav-link" to="/Hcx2">
                         Examen medico
                     </Link>
                 </li>
-                <li className={`nav-item ${isActive("/Hcx3")}`}>
+                <li className={`nav-item p-1 ${isActive("/Hcx3")}`}>
                     <Link className="nav-link" to="/Hcx3">
                         Padecimiento actual
                     </Link>
                 </li>
-                <li className={`nav-item ${isActive("/Hcx4")}`}>
+                <li className={`nav-item p-1 ${isActive("/Hcx4")}`}>
                     <Link className="nav-link" to="/Hcx4">
                         Examen medico extremidades
                     </Link>
                 </li>
-                <li className={`nav-item ml-auto ${isActive("/login")}`}>
+                <li className={`nav-item ml-auto p-1 space-x-10 ${isActive("/login")}`}>
                     <Link className="nav-link x-10" to="/login">
                         Iniciar sesion
                     </Link>

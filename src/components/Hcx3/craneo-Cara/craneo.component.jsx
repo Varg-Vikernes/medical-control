@@ -39,9 +39,21 @@ const Cara = () => {
     const [mmmppInferior, setMmmppInferior] = useState('');
     const [notasExploracion, setNotasExploracion] = useState('');
 
+
+    const [mostrarOcultar , setMostrarOcultar] = useState(false);
+
+    const toogleMO = () =>{
+        setMostrarOcultar(!mostrarOcultar)
+    }
+
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingresa los datos correctamente" : "Craneo Cara"}</b></span>
+        </button>
+        {
+            mostrarOcultar &&(
+                <form action="" className="w-full p-4">
                 <h1 className="text-xl  font-sans mb-4">Craneo Cara</h1>
 
                 <div className="flex justify-between mr-4">
@@ -331,6 +343,9 @@ const Cara = () => {
                     </div>
                 </div>
             </form>
+            )
+        }
+          
         </>
     )
 }

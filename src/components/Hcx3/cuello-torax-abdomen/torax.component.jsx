@@ -9,10 +9,21 @@ const Torax = () => {
     const [intensidad, setIntencidad] = useState('');
     const [caracteristicasLatido, setCaracteristicasLatido] = useState('');
     const [notasExploracion, setNotasExploracion] = useState('');
+    
+    const [mostrarOcultar, setMostrarOcultar] = useState(false);
+
+        const toogleMO = () => {
+            setMostrarOcultar(!mostrarOcultar)
+        }
 
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta" >
+            <span><b>{mostrarOcultar ? "Ingresa los datos Correctamente" : "Torax"}</b></span>
+        </button>
+            {
+                mostrarOcultar && (
+                    <form action="" className="w-full p-4">
                 <h1 className="text-xl  font-sans mb-4">    Torax .</h1>
 
                 <div className="flex justify-between mr-4">
@@ -80,6 +91,8 @@ const Torax = () => {
                     </div>
                 </div>
             </form>
+                )
+            }
         </>
     )
 }

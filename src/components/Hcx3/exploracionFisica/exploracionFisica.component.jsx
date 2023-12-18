@@ -13,9 +13,19 @@ const ExploracionF = () => {
     const [movimientoAnorm, setMovimientoAnorm] = useState('');
     const [especificarAnorm, setEspecificacionAnorm] = useState('');
 
+    const [mostrarOcultar, setMpstrarOcultar] = useState(false)
+
+    const toogleMO = () =>{
+            setMpstrarOcultar(!mostrarOcultar)
+    }
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingresa los datos Correctamente" : "Padecimiento Actual"}</b></span>
+        </button>
+        {
+            mostrarOcultar && (
+                <form action="" className="w-full p-4">
 
                 <h1 className="text-xl  font-sans mb-4">Padecimiento Actual</h1>
                 <h1 className="text-xl  font-sans mb-4">Exploracion fisica</h1>
@@ -119,6 +129,8 @@ const ExploracionF = () => {
                     </div>
                 </div>
             </form>
+            )
+        }
         </>
     );
 }

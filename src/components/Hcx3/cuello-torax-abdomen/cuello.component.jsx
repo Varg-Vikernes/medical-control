@@ -7,9 +7,19 @@ const Cuello = () => {
     const [tiroides, setTiroides] = useState('');
     const [NotadeExploracion, setNotadeExploracion] = useState('');
 
+    const [mostrarOcultar, setMostrarOcultar] = useState(false);
+
+    const toogleMO =() => {
+        setMostrarOcultar(!mostrarOcultar);
+    }
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingresa los datos correctamente" : "Cuello"}</b></span>
+        </button>
+        {
+            mostrarOcultar && (
+                <form action="" className="w-full p-4">
                 <h1 className="text-xl  font-sans mb-4"> Cuello. </h1>
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
@@ -51,6 +61,9 @@ const Cuello = () => {
                     </div>
                 </div>
             </form>
+            )
+        }
+          
         </>
     )
 }

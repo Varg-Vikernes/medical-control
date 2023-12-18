@@ -1,0 +1,7 @@
+dobos{
+    width: auto;
+}
+.font{
+    background: rgb(252,255,255);
+    background: linear-gradient(90deg, rgba(252,255,255,1) 0%, rgba(210,255,215,1) 59%, rgba(168,255,175,1) 100%);
+}

@@ -1,0 +1,128 @@
+.container-form {
+    width: 1100px;
+    margin: 0 auto; /* Establece los márgenes izquierdo y derecho a 'auto' */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    border-radius: 10px;
+
+  }
+  
+.formulario_hcx2{
+    background-image: url('../img/imgfondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+}
+.tabla_derecha,
+.tabla_centro,
+.tabla-derecha{
+    border-radius: 10px;
+    border: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Btn mostrar ocultar un div */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    width: 100%;
+    margin-bottom: 10px;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+    
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+    
+   .cta:active {
+    transform: scale(0.95);
+   }
+  
+   /* Boton para enviar los datos */
+  
+   .button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
