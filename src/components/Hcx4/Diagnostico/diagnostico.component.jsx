@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export function Diagnostico() {
+
+    const [mostrarOcultar , setMostrarOcultar] = useState(false);
+
+    const toogleMO = () =>{
+        setMostrarOcultar(!mostrarOcultar)
+    }
     return (
         <>
-            <form action="" className="w-full p-2">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingrese los datos correctamente" : "Diagnosticos"}</b></span>
+        </button>
+        {
+            mostrarOcultar && (
+                <form action="" className="w-full p-2">
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
 
@@ -54,6 +65,8 @@ export function Diagnostico() {
                     </div>
                 </div>
             </form>
+            )
+        }
         </>
     )
 }

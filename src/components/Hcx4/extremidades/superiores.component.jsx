@@ -10,9 +10,18 @@ const ExtremidadesSuperiores = () => {
     const [otrasCaract, setOtrasCaract] = useState('')
     const [manos, setManos] = useState('')
     const [uñas, setUñas] = useState('')
+    const [mostrarOcultar, setMostrarOcultar] = useState(false);
 
+    const toogleMO = () =>{
+        setMostrarOcultar(!mostrarOcultar)
+    }
     return (
         <>
+                <button onClick={toogleMO} className="cta">
+                <span><b>{mostrarOcultar ? "Ingrese Correctamente los Datos" : "Extremidades Superiores"}</b></span>
+            </button>
+            {
+                mostrarOcultar &&(
             <form action="" className="w-full p-4">
                 <h1 className="text-xl  font-sans mb-4">Extremidades superiores</h1>
                 <div className="flex justify-between mr-4">
@@ -85,6 +94,8 @@ const ExtremidadesSuperiores = () => {
                     </div>
                 </div>
             </form>
+                )
+}
         </>
     )
 }

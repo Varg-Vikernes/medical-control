@@ -15,8 +15,8 @@ const Hcx3 = () => {
                     <Navbar className="w-auto" />
                 </div>
                 <div className="flex-1 flex flex-col ">
-                    <div className="container mx-auto p-10">
-                        <div className="flex flex-wrap items-center p-5 ">
+                    <div className="container mx-auto ">
+                        <div className="flex flex-wrap items-center p-20 ">
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
@@ -26,7 +26,7 @@ const Hcx3 = () => {
                                 />
                             </div>
                             {/* Texto que identifica el tipo de formulario*/}
-                            <div className="w-full md:w-1/2 p-20 text-center">
+                            <div className="w-full md:w-1/2 p-12 text-center">
                                 <h1 className="text-4x2 font-bold">
                                     Historia Clinica --- Servicio Medico
                                 </h1>

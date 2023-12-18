@@ -11,9 +11,21 @@ export function Laboratorio() {
     const [rxColumna, setRxcolumna] = useState('');
     const [exudad, setExusado] = useState('');
     const [copro, setCopro] = useState('');
+
+        const [mostrarOcultar , setMostrarOcultar] = useState(false);
+
+        const toogleMO = () =>{
+            setMostrarOcultar (!mostrarOcultar)
+        }
+
     return (
         <>
-            <form action="" className="w-full p-2">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingrese los datos Correctamente" : "Examenes de Laboratorio y Gabinete"}</b></span>
+        </button>
+            {
+                mostrarOcultar &&(
+                    <form action="" className="w-full p-2">
                 <h1 className="text-xl  font-sans mb-4">  EXAMENES DE LABORATIORIO Y GABINETE</h1>
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
@@ -97,6 +109,9 @@ export function Laboratorio() {
                     </div>
                 </div>
             </form>
+                )
+            }
+            
         </>
     )
 }

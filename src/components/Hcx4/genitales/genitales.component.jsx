@@ -7,9 +7,20 @@ const Genitales = () => {
     const [masa, setMasa] = useState('');
     const [ganglios, setGanglios] = useState('');
     const [dolor, setDolor] = useState('');
+    const [mostrarOcultar, setMostrarOcultar] = useState(false)
+
+    const toogleMO = () =>{
+        setMostrarOcultar(!mostrarOcultar)
+        window.alert("Envia los datos antes de salir")
+    }
     return (
         <>
-            <form action="" className="w-full p-4">
+        <button onClick={toogleMO} className="cta">
+            <span><b>{mostrarOcultar ? "Ingresa correctamente los datos" : "Genitales"}</b></span>
+        </button>
+        {
+            mostrarOcultar &&(
+                <form action="" className="w-full p-4">
                 <h1 className="text-xl  font-sans mb-4">Genitales</h1>
 
                 <div className="flex justify-between mr-4">
@@ -51,6 +62,8 @@ const Genitales = () => {
                     </div>
                 </div>
             </form>
+            )
+        }
         </>
     )
 }
