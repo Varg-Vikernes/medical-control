@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 
 const AntecedentesPorAparatos = () => {
-    const [mostrarOcultar, setMostrarOcultar] = useState(true);
+    const [mostrarOcultar, setMostrarOcultar] = useState(false);
         const toogleMO =() =>{
             setMostrarOcultar(!mostrarOcultar)
         }
     return (
         <>
         <button onClick={toogleMO} className="cta">
-            <span><b>{mostrarOcultar ? "Introduzca los datos " : "Interrohatorio por Aparatos y Sistemas"}</b></span>
+            <span><b>{mostrarOcultar ? "Introduzca los datos " : "Interrogatorio por Aparatos y Sistemas"}</b></span>
         </button>
         {
             mostrarOcultar && (
+                <div className="Form border rounded-lg p-8 shadow-md">
                 <form action="" className="w-full p-4">
-
-                <h1 className="text-xl  font-sans mb-4 title">Interrogatorio por aparatos y sistemas </h1>
+                    <div className="seven">
+                    <h1 >Interrogatorio por aparatos y sistemas </h1>
+                    </div>
                 <div className="flex-1 mr-4">
                     <label htmlFor="Digestivo" className="block font-bold">
                         Digestivo:
@@ -87,8 +89,9 @@ const AntecedentesPorAparatos = () => {
                         className="w-full border p-2 w-full"
                     />
                 </div>
+                <button className="button" type="submit">Enviar</button>
             </form>
-
+                </div>
             )
         }
                     </>

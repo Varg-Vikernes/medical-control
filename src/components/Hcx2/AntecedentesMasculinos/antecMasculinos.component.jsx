@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AntececenteMasculino = () =>{
-    const [mostrarOcultar , setMostrarOcultar] = useState (true)
+    const [mostrarOcultar , setMostrarOcultar] = useState (false)
     const toogleMO = () => {
             setMostrarOcultar(!mostrarOcultar)
         }
@@ -13,10 +13,13 @@ const AntececenteMasculino = () =>{
             </button>
             {
                 mostrarOcultar &&(
-                    <><h1 className="text-xl  font-sans mb-4 title">
-                        Antecedentes Masculinos
-                    </h1><div className="flex justify-betwen mb-4">
-                            <div className="flex-1 mr-4">
+                    <>
+                    <div className="seven">
+                    <h1 >Antecedentes Masculinos</h1>
+                    </div>
+                        <div className="Form border rounded-lg p-8 shadow-md">    
+                    <div className="flex justify-betwen mb-4 ">
+                            <div className="flex-1 mr-4 ">
                                 {/* Tabla de lado Izquierdo */}
                                 <table className="table-auto  mx-auto my-4">
                                     <tbody>
@@ -108,7 +111,9 @@ const AntececenteMasculino = () =>{
                                     </tbody>
                                 </table>
                             </div>
-                        </div></>
+                        </div>
+                            </div>
+                            </>
                 )
             }
         </>

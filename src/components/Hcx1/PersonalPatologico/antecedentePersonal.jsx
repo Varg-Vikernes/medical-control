@@ -26,7 +26,7 @@ const PersonalPatologico = ({ onSubmit }) => {
             , actividadesDepor
         })
     }
-    const [mostrarOcultar , setMostrarOcultar] = useState(true)
+    const [mostrarOcultar , setMostrarOcultar] = useState(false)
 
     const toogleMO = () =>{
         setMostrarOcultar(!mostrarOcultar)
@@ -41,7 +41,9 @@ const PersonalPatologico = ({ onSubmit }) => {
             mostrarOcultar &&(
                 <form action="" onSubmit={handleSubmint} className=" Form-AntecedentesPersonales w-full p-4">
                 <div className="border rounded-lg p-8 shadow-md">
-                    <h1 className="text-xl  font-sans mb-4 title">Antecedentes personales no Patologicos</h1>
+                    <div className="seven">
+                        <h1>Antecedentes personales no Patologicos</h1>
+                    </div>
                     <div className="flex justify-betwen mb-4">
                         <div className="flex-1 mr-4">
                             <label htmlFor="habitacion" className="block font-bold">
@@ -217,7 +219,9 @@ const PersonalPatologico = ({ onSubmit }) => {
                             />
                         </div>
                     </div>
-                    <button type="submit">Enviar datos </button>
+                    <div className="buton">
+                    <button type="submit" className="button">Enviar</button>
+                </div>
                 </div>
             </form>
             )

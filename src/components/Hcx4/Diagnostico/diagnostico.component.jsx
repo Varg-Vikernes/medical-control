@@ -14,6 +14,10 @@ export function Diagnostico() {
         </button>
         {
             mostrarOcultar && (
+                <div className="Form border rounded-lg p-8 shadow-md">    
+            <div className="seven">
+                <h1>Diagnosticos</h1>
+            </div>
                 <form action="" className="w-full p-2">
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
@@ -65,6 +69,7 @@ export function Diagnostico() {
                     </div>
                 </div>
             </form>
+            </div>
             )
         }
         </>

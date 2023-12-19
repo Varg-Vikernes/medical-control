@@ -25,8 +25,12 @@ export function Laboratorio() {
         </button>
             {
                 mostrarOcultar &&(
-                    <form action="" className="w-full p-2">
+                    <div className="Form border rounded-lg p-8 shadow-md">    
+
+             <form action="" className="w-full p-2">
+                <div className="seven">
                 <h1 className="text-xl  font-sans mb-4">  EXAMENES DE LABORATIORIO Y GABINETE</h1>
+                </div>
                 <div className="flex justify-between mr-4">
                     <div className="flex-1 mr-4">
                         <label htmlFor="bh" className="block font-bold">BH:</label>
@@ -109,6 +113,7 @@ export function Laboratorio() {
                     </div>
                 </div>
             </form>
+            </div>
                 )
             }
             

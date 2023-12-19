@@ -11,7 +11,6 @@ const Genitales = () => {
 
     const toogleMO = () =>{
         setMostrarOcultar(!mostrarOcultar)
-        window.alert("Envia los datos antes de salir")
     }
     return (
         <>
@@ -20,8 +19,12 @@ const Genitales = () => {
         </button>
         {
             mostrarOcultar &&(
+                <div className="Form border rounded-lg p-8 shadow-md">    
+
                 <form action="" className="w-full p-4">
+                    <div className="seven">
                 <h1 className="text-xl  font-sans mb-4">Genitales</h1>
+                    </div>
 
                 <div className="flex justify-between mr-4">
 
@@ -62,6 +65,7 @@ const Genitales = () => {
                     </div>
                 </div>
             </form>
+            </div>
             )
         }
         </>

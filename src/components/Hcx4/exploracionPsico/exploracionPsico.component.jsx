@@ -33,8 +33,11 @@ const ExploracionPsiconeurologica = () => {
             </button>
             {
                 mostrarOcultar &&(
+                    <div className="Form border rounded-lg p-8 shadow-md">    
                     <form action="" className="w-full p-2">
+                        <div className="seven">
                     <h1 className="text-xl  font-sans mb-4">  EXPLORACION PSICONEUROLOGICA </h1>
+                        </div>
                     <div className="flex justify-between mr-4">
                         <div className="flex-1 mr-4">
                             <label htmlFor="aspecto" className="block font-bold">Aspecto:</label>
@@ -177,6 +180,7 @@ const ExploracionPsiconeurologica = () => {
                         </div>
                     </div>
                 </form>
+                </div>
                 )
             }
         </>

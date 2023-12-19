@@ -25,10 +25,12 @@ const ExploracionF = () => {
         </button>
         {
             mostrarOcultar && (
+                <div className="Form border rounded-lg p-8 shadow-md">    
                 <form action="" className="w-full p-4">
-
+                    <div className="seven">
                 <h1 className="text-xl  font-sans mb-4">Padecimiento Actual</h1>
                 <h1 className="text-xl  font-sans mb-4">Exploracion fisica</h1>
+                    </div>
                 <div className="flex justify-betwen mb-4">
 
                     <div className="flex-1 mr-4">
@@ -129,6 +131,7 @@ const ExploracionF = () => {
                     </div>
                 </div>
             </form>
+            </div>
             )
         }
         </>

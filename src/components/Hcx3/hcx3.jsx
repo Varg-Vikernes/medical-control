@@ -5,34 +5,33 @@ import Cara from "./craneo-Cara/craneo.component";
 import Cuello from "./cuello-torax-abdomen/cuello.component";
 import Torax from "./cuello-torax-abdomen/torax.component";
 import Abdomen from "./cuello-torax-abdomen/abdoment.component";
-import '../style/hcx3.component.css'
-
+import '../style/hcx1.component.css'
+import alfaparf from '../img/logoDobos.png'
 const Hcx3 = () => {
     return (
         <>
-            <div className="flex formulario_hcx3">
-                <div className="w-auto ">
-                    <Navbar className="w-auto" />
-                </div>
+                <Navbar />
+          <div className="flex formulario_hcx1">
                 <div className="flex-1 flex flex-col ">
-                    <div className="container mx-auto ">
-                        <div className="flex flex-wrap items-center p-20 ">
+                    <div className="container mx-auto p-10">
+                        <div className="flex flex-wrap items-center p-5 ">
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
-                                    src="https://th.bing.com/th/id/R.0bb24fc69f3eadf890bc973595958d98?rik=4n7nydXfJTfMxw&pid=ImgRaw&r=0"
+                                    src={alfaparf}
                                     alt=""
-                                    className="w-60 h-24 object-cover font-sans "
+                                    className="w-30 h-20 object-cover font-sans "
                                 />
                             </div>
                             {/* Texto que identifica el tipo de formulario*/}
-                            <div className="w-full md:w-1/2 p-12 text-center">
+                            <div className="w-full md:w-1/2 p-11 text-center">
                                 <h1 className="text-4x2 font-bold">
                                     Historia Clinica --- Servicio Medico
                                 </h1>
                             </div>
                         </div>
                     </div>
+
                     {/* Demas partes del formulario */}
                     <div className="container-form bg-white">
                     <ExploracionF />

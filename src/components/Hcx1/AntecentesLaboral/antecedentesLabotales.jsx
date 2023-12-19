@@ -29,7 +29,7 @@ const AntecedentesLaborales = ({ onSubmit }) => {
         })
     }
 
-    const [mostrarOcultar , setMostrarOcultar] = useState(true)
+    const [mostrarOcultar , setMostrarOcultar] = useState(false)
 
     const toogleMO = () =>{
         setMostrarOcultar(!mostrarOcultar)
@@ -44,7 +44,10 @@ const AntecedentesLaborales = ({ onSubmit }) => {
                 mostrarOcultar &&(
                     <form action="" onSubmit={handleSubmit} className="Form-Antecedentes w-full p-4">
                     <div className="border rounded-lg p-8 shadow-md ">
-                        <h1 className="text-xl  font-sans mb-4 title"> Antecedentes Laborales. </h1>
+                        <div className="seven">
+                            <h1>Antecedentes Laborales</h1>
+                        </div>
+
                         {/* FORMULARIO ANTECEDENTES LABORALES */}
                         <div className="flex-1 mr-4">
                             <label htmlFor="lugaresLaborales" className="block font-bold">
@@ -227,7 +230,9 @@ const AntecedentesLaborales = ({ onSubmit }) => {
                                 onChange={(e) => setAnalisisErgonomico(e.target.value)}
                             />
                         </div>
-                        <button type="submit">Enviar Datos</button>
+                        <div className="buton">
+                    <button type="submit" className="button">Enviar</button>
+                </div>
                     </div>
                 </form>        
                 )

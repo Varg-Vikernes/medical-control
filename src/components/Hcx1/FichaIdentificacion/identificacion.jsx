@@ -26,7 +26,7 @@ const Identificacion = ({ onSubmit }) => {
             domicilio
         })
     }
-    const [mostrarOcultar , setMostrarOcultar] = useState(true)
+    const [mostrarOcultar , setMostrarOcultar] = useState(false)
 
     const toogleMO = () =>{
         setMostrarOcultar(!mostrarOcultar)
@@ -40,8 +40,10 @@ const Identificacion = ({ onSubmit }) => {
     </button>
     { mostrarOcultar && (
         <form action="" className="w-full p-4" onSubmit={handleForSubmit}>
-            <div className="border rounded-lg p-8 shadow-md Form-Identificacion">
-                <h1 className="text-xl  font-sans mb-4 title">Ficha de identificacion</h1>
+            <div className="border rounded-lg p-8 shadow-md ">
+                    <div className="seven">
+                        <h1>Ficha de Identificacion</h1>
+                    </div>
                 <div className="flex justify-between mb-4">
 
                     <div className="flex-1 mr-4">
@@ -180,7 +182,9 @@ const Identificacion = ({ onSubmit }) => {
                         onChange={(e) => setDomicilio(e.target.value)}
                     />
                 </div>
-                <button type="submit">Enviar</button>
+                <div className="buton">
+                    <button type="submit" className="button">Enviar</button>
+                </div>
             </div>
         </form >  
     )}
