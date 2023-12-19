@@ -100,6 +100,9 @@ input{
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
+  margin: auto;
+  padding: auto;
+  display: grid;
   }
  
  .button::before, .button::after {

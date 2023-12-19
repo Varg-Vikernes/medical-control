@@ -112,6 +112,7 @@ const AntececenteMasculino = () =>{
                                 </table>
                             </div>
                         </div>
+                        <button className="button" type="submit"> Enviar Datos</button>
                             </div>
                             </>
                 )
