@@ -9,11 +9,15 @@ const Primario = ({ onSubmit }) => {
 
     const handleForSubmit = (e) => {
         e.preventDefault();
-        onSubmit({
-            examenMedico, ingresos, periodo, otros, fecha
-        });
+        const confirm = window.confirm("Estas seguro que deseas enviar los datos")
+        if (confirm){
+            onSubmit({
+                examenMedico, ingresos, periodo, otros, fecha
+            });
+        } else{
+            console.log("envio cancelado")
+        }
     }
-
     // estado para manejar la visibilidad del div
 
     const [ocultar, setOcultar] = useState(false)
@@ -71,7 +75,24 @@ const Primario = ({ onSubmit }) => {
                             </div>
                         </div>
                         <div className="buton">
-                            <button type="submit" className="button">Enviar</button>
+<div className="toast active">
+  
+  <div className="toast-content">
+    <i className="fas fa-solid fa-check check"></i>
+
+    <div className="message">
+      <span className="text text-1">Success</span>
+      <span className="text text-2">Your changes has been saved</span>
+    </div>
+  </div>
+  <i className="fa-solid fa-xmark close"></i>
+
+  <div className="progress active"></div>
+</div>
+
+<button>Show Toast</button>
+
+<small >Remove 'active' classes, this is just to show in Codepen thumbnail</small>
                         </div>
                     </div>
                 </form>

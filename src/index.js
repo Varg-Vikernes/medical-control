@@ -5,10 +5,10 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './index.css';
-import Hcx1 from './components/Hcx1/hcx1';
-import Hcx2 from './components/Hcx2/hcx2';
-import Hcx3 from './components/Hcx3/hcx3';
-import Hcx4 from './components/Hcx4/hcx4';
+import Hcx1 from './components/Hcx1/Hcx1';
+import Hcx2 from './components/Hcx2/Hcx2';
+import Hcx3 from './components/Hcx3/Hcx3';
+import Hcx4 from './components/Hcx4/Hcx4';
 import { Login } from './components/Auth/login.component';
 
 const router = createBrowserRouter([

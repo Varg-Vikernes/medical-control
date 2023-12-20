@@ -29,6 +29,8 @@ const AntecedentesLaborales = ({ onSubmit }) => {
         })
     }
 
+  
+
     const [mostrarOcultar , setMostrarOcultar] = useState(false)
 
     const toogleMO = () =>{

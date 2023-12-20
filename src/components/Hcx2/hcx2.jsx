@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import AntPatologico from "./antececentesPatologicos/patologicos.component";
-import Obstretico from "./genico-Obstretico/obstretico.component";
-import AntececenteMasculino from "./AntecedentesMasculinos/antecMasculinos.component";
-import AntecedentesPorAparatos from "./InterrogatorioPorAparatos/interrogatorio.component";
-import '../style/hcx1.component.css'
-import alfaparf from '../img/logoDobos.png'
+import AntPatologico from "./AntececentesPatologicos/Patologicos.component";
+import Obstretico from "./GenicoObstretico/Obstretico.component";
+import AntececenteMasculino from "./AntecedentesMasculinos/AntecMasculinos.component";
+import AntecedentesPorAparatos from "./InterrogatorioPorAparatos/Interrogatorio.component";
+import '../style/Hcx1.style.css'
+import alfa from "../../img/logoDobos.png";
 
 const Hcx2 = () => {
     return (
@@ -18,7 +18,7 @@ const Hcx2 = () => {
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
-                                    src={alfaparf}
+                                src={alfa}
                                     alt=""
                                     className="w-30 h-20 object-cover font-sans "
                                 />

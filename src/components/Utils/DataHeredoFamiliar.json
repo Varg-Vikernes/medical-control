@@ -1,0 +1,28 @@
+{
+  "familiaresData": [
+    { "title": "padre", "name": "Padre" },
+    { "title": "madre", "name": "Madre" },
+    { "title": "hermano", "name": "Hermano" },
+    { "title": "hijo", "name": "Hijo" },
+    { "title": "otros", "name": "Otros" }
+  ],
+  
+  "enfermedadesData": [
+    { "title": "asmatico", "name": "Asmático" },
+    { "title": "diabetico", "name": "Diabético" },
+    { "title": "psiquiatrico", "name": "Psiquiátrico" },
+    { "title": "epileptico", "name": "Epileptico" },
+    { "title": "neoplasticos", "name": "Neoplasticos" },
+    { "title": "artriticos", "name": "Artriticos" },
+    { "title": "obesidad", "name": "Obesidad" },
+    { "title": "cardiovasculares", "name": "Cardiovasculares" },
+    { "title": "hipertencivos", "name": "Hipertencivos" },
+    { "title": "congenitos", "name": "Congenitos" },
+    { "title": "hermatologos", "name": "Hermatologos" },
+    { "title": "audiologicos", "name": "Audiologicos" },
+    { "title": "sifiliticos", "name": "Sifiliticos" },
+    { "title": "ulcerosos", "name": "Ulcerosos" },
+    { "title": "litiasicos", "name": "Litiasicos" },
+    { "title": "otros", "name": "Otros" }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+    "EnfermedadPartOne" :[
+        {"title": "alergico" , "name" : "Alergico"},
+        {"title":"diabetico", "name": "Diabetico"},
+        {"title":"epileptico", "name": "Epileptico"},
+        {"title":"artritico", "name": "Artritico"},
+        {"title":"cardiovascular", "name": "Cardiovascular"},
+        {"title":"hipertenso", "name": "Hipertenso"},
+        {"title":"hermatologico", "name": "Hermatologico"},
+        {"title":"traumatico", "name": "Traumatico"},
+        {"title":"siquiatrico", "name": "Siquiatrico"},
+        {"title":"neoplastico", "name": "Neoplastico"},
+        {"title" : "quirurgico", "name" : "Quirurgico"}
+    ],
+    "EnfermedadPartTwo" :[
+        {"title":"endocrinolog", "name": "Endocrinologo"},
+        {"title":"genitourinario", "name": "Genitourinario"},
+        {"title":"neurologico", "name": "Neurologico"},
+        {"title":"asmatico", "name": "Asmatico"},
+        {"title":"icterico", "name": "Icterico"},
+        {"title":"congenito", "name": "Congenito"},
+        {"title":"audiologo", "name": "Audiologo"},
+        {"title":"transfuncional", "name": "Transfuncional"},
+        {"title":"parasitos", "name": "Parasitos"},
+        {"title":"otros", "name": "Otros"}
+    ],
+    "EnfermedadPartTree" : [
+        {"title":"sarampion", "name": "Sarampion"},
+        {"title":"rubeola", "name": "Rubeola"},
+        {"title":"otitis", "name": "Otitis"},
+        {"title":"varicela", "name": "Varicela"},
+        {"title":"escarlatina", "name": "Escarlatina"},
+        {"title":"venereas", "name": "Venereas"},
+        {"title":"tuberculosis", "name": "Tuberculosis"},
+        {"title":"parotiditis", "name": "Parotiditis"},
+        {"title":"amigdalas", "name": "Amigdalas"},
+        {"title":"bronquitis", "name": "Bronquitis"},
+        {"title":"otros", "name": "Otros"}
+    ],
+
+    "GinecoObstreticoOne" :[
+        {"title": "menarca" , "name": "Menarca"},
+        {"title": "ritmo" , "name": "Ritmo"},
+        {"title": "cicloMenstrual" , "name": "Ciclo Menstrual"},
+        {"title": "caracteristicas" , "name": "Caracteristicas"},
+        {"title": "fum" , "name": "Fum"}
+    ],
+    "GinecoObstreticoTwo" :[
+        {"title": "inicioVidaSexual" , "name": "Inicio vida Sexual activa"},
+        {"title": "gestaciones" , "name": "Gestaciones"},
+        {"title": "partos" , "name": "Partos"},
+        {"title": "cesarea" , "name": "Cesarea"},
+        {"title": "aborto" , "name": "Aborto"}
+    ],"GinecoObstreticoTree" :[
+        {"title": "controlDeFertilidad" , "name": "Control de fertilidad"},
+        {"title": "otros" , "name": "Otros"},
+        {"title": "" , "name": "Infecciones"},
+        {"title": "" , "name": ""},
+        {"title": "" , "name": ""}
+    ],
+
+    "AntecedentesMasculinosOne" : [
+        {"titulo": "EnfermedadProstata" , "name": "Enfermedad de prostata"},
+        {"titulo": "desordenesReproductivos" , "name": "Desordenes Reproductivos"},
+        {"titulo": "dolorEnelTesticulo" , "name": "Dolor en el testiculo"},
+        {"titulo": "otros" , "name": "Otros"}
+    ],
+    "AntecedentesMasculinosTwo" : [
+        {"titulo": "orinaFrecuente" , "name": "Orina Frecuente"},
+        {"titulo": "masas en testiculos" , "name": "Masas en testiculos"},
+        {"titulo": "vasectomia" , "name": "Vasectomia"},
+        {"titulo": "" , "name": ""}
+    ],
+    "AntecedentesMasculinosTree" : [
+        {"titulo": "infecciondePene" , "name": "Infeccion de pene"},
+        {"titulo": "infeccionProstata" , "name": "Infeccion de prostata"},
+        {"titulo": "infeccionTesticulos" , "name": "Infeccion de Testiculos"},
+        {"titulo": "" , "name": ""}
+    ]
+} 

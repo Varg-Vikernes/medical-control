@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import Primario from "./DatosPrimarios/primario";
-import Identificacion from "./FichaIdentificacion/identificacion";
-import AntecedentesLaborales from "./AntecentesLaboral/antecedentesLabotales";
-import PersonalPatologico from "./PersonalPatologico/antecedentePersonal";
-import HeredoFamiliar from "./antecedentesHeredoFam/antecedentesHeredoF";
+import Primario from "./DatosPrimarios/Primario";
+import Identificacion from "./FichaIdentificacion/Identificacion";
+import AntecedentesLaborales from "./AntecentesLaboral/AntecedentesLabotales";
+import PersonalPatologico from "./PersonalPatologico/AntecedentePersonal";
+import HeredoFamiliar from "./AntecedentesHeredoFam/AntecedentesHeredoF";
 import Navbar from "../Navbar/Navbar";
-import '../style/hcx1.component.css'
-import alfaparf from '../img/logoDobos.png'
-
+import '../style/Hcx1.style.css'
+import alfa from "../../img/logoDobos.png";
 const Hcx1 = () => {
     //manejo de estados de los campos 
     const [datosFormulario, setDatosformulario] = useState({ Primario: {} });
@@ -66,7 +65,7 @@ const Hcx1 = () => {
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                             <img
-                    src={alfaparf}
+                            src={alfa}
                     alt=""
                     className="w-30 h-10 object-cover font-sans "
                 />

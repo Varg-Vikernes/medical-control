@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import ExploracionF from "./exploracionFisica/exploracionFisica.component";
-import Cara from "./craneo-Cara/craneo.component";
-import Cuello from "./cuello-torax-abdomen/cuello.component";
-import Torax from "./cuello-torax-abdomen/torax.component";
-import Abdomen from "./cuello-torax-abdomen/abdoment.component";
-import '../style/hcx1.component.css'
-import alfaparf from '../img/logoDobos.png'
+import ExploracionF from "./ExploracionFisica/ExploracionFisica.component";
+import Cara from "./CraneoCara/Craneo.component";
+import Cuello from "./CuelloToraxAbdomen/Cuello.component";
+import Torax from "./CuelloToraxAbdomen/Torax.component";
+import Abdomen from "./CuelloToraxAbdomen/Abdoment.component";
+
+import '../style/Hcx1.style.css'
+import alfa from "../../img/logoDobos.png";
+
 const Hcx3 = () => {
     return (
         <>
@@ -18,7 +20,7 @@ const Hcx3 = () => {
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
-                                    src={alfaparf}
+                                src={alfa}
                                     alt=""
                                     className="w-30 h-20 object-cover font-sans "
                                 />

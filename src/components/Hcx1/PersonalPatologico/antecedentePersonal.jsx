@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 const PersonalPatologico = ({ onSubmit }) => {
+
+    
     const [habitacion, setHabitacion] = useState('');
     const [habitadaPor, setHabitadaPor] = useState('');
     const [noHabitacion, setNoHabitacion] = useState('');

@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import dobos from '../img/dobos.png'
-import '../style/nabvar.component.css'
-
+import '../style/Nabvar.style.css'
+import dobos from '../../img/dobos.png'
 const Navbar = () => {
     const location = useLocation();
 

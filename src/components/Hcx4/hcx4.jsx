@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Genitales from "./genitales/genitales.component";
-import ExtremidadesSuperiores from "./extremidades/superiores.component";
-import ExtremidadesInferiores from "./extremidades/inferiores.component";
-import ExploracionPsiconeurologica from "./exploracionPsico/exploracionPsico.component";
-import { Laboratorio } from "./exmLaboratorio/examenLaboratorio.component";
-import { Diagnostico } from "./Diagnostico/diagnostico.component";
-import '../style/hcx1.component.css'
-import alfaparf from '../img/logoDobos.png'
+import Genitales from "./Genitales/Genitales.component";
+import ExtremidadesSuperiores from "./Extremidades/Superiores.component";
+import ExtremidadesInferiores from "./Extremidades/Inferiores.component";
+import ExploracionPsiconeurologica from "./ExploracionPsico/ExploracionPsico.component";
+import { Laboratorio } from "./ExmLaboratorio/ExamenLaboratorio.component";
+import { Diagnostico } from "./Diagnostico/Diagnostico.component";
+import '../style/Hcx1.style.css'
+import alfa from "../../img/logoDobos.png";
 
 const Hcx4 = () => {
     return (
@@ -20,7 +20,7 @@ const Hcx4 = () => {
                             {/* Imagen de la empresa */}
                             <div className="w-full md:w-1/2">
                                 <img
-                                    src={alfaparf}
+                                src={alfa}
                                     alt=""
                                     className="w-30 h-20 object-cover font-sans "
                                 />
