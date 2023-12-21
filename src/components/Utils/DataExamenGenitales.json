@@ -1,0 +1,67 @@
+{
+    "genitales" : [
+        {"name": "Forma"},
+        {"name": "Piel"},
+        {"name": "Masa"},
+        {"name": "Ganglios"},
+        {"name": "Dolor"}
+    ],
+    "ExtremidadesSuperiores" :[
+        {"name" : "Estructura"},
+        {"name" : "Sensibilidad"},
+        {"name" : "Manos"},
+        {"name" : "Fuerza Muscular"},
+        {"name" : "Piel"},
+        {"name" : "Pulso"},
+        {"name" : "Uñas"},
+        {"name" : "Reflejos"},
+        {"name" : "Otras caracteristicas"}
+    ],
+    "ExtremidadesInferiores": [
+        {"name": "Estructura"},
+        {"name": "Sensibilidad"},
+        {"name": "Pies"},
+        {"name": "Piel"},
+        {"name": "Fuerza Muscular"},
+        {"name": "Pulso"},
+        {"name": "Uñas"},
+        {"name": "Reflejos"},
+        {"name": "Otras caracteristicas"},
+        {"name": "Nota de Exploracion"}
+    ],
+    "ExploracionPsiconeurologica" : [
+        {"name": "Aspecto"},
+        {"name": "Afectivas"},
+        {"name": "Conducta Motora"},
+        {"name": "Funcion Intelectual"},
+        {"name": "Atencion"},
+        {"name": "Juicio"},
+        {"name": "Asociacion de Ideas"},
+        {"name": "Orientacion"},
+        {"name": "Memoria"},
+        {"name": "Lenguaje"},
+        {"name": "Sensibilidad"},
+        {"name": "Motricidad"},
+        {"name": "Coordinacion"},
+        {"name": "Reflejos"},
+        {"name": "Equilibrio"},
+        {"name": "Otro"},
+        {"name": "Nota de Exploracion"}
+    ],
+    "ExameDeLaboratorio" : [
+        {"name": "BH"},
+        {"name": "Qs"},
+        {"name": "Grupo y RH"},
+        {"name": "Ego"},
+        {"name": "Audiometria"},
+        {"name": "Rx torax"},
+        {"name": "Rx columna"},
+        {"name": "Exudado faringeo"},
+        {"name": "Copro"}
+    ],
+    "DIAGNOSTICOS" : [
+        {"name" :"Diagnosticos"},
+        {"name" :"Tratamiento"},
+        {"name" :"Comentarios"}
+    ]
+}

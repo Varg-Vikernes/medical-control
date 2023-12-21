@@ -1,10 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import ExploracionF from "./ExploracionFisica/ExploracionFisica.component";
-import Cara from "./CraneoCara/Craneo.component";
-import Cuello from "./CuelloToraxAbdomen/Cuello.component";
-import Torax from "./CuelloToraxAbdomen/Torax.component";
-import Abdomen from "./CuelloToraxAbdomen/Abdoment.component";
+
 
 import '../style/Hcx1.style.css'
 import alfa from "../../img/logoDobos.png";
@@ -37,10 +34,7 @@ const Hcx3 = () => {
                     {/* Demas partes del formulario */}
                     <div className="container-form bg-white">
                     <ExploracionF />
-                    <Cara />
-                    <Cuello />
-                    <Torax />
-                    <Abdomen />
+                  
                     <button className="button" >Enviar Datos por consola</button>
                     </div>
                 </div>

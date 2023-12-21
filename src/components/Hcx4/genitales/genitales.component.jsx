@@ -1,73 +1,67 @@
 import React from "react";
-import { useState } from "react";
+import DataGenitales from '../../Utils/DataExamenGenitales.json';
+
+const RenderInputLabel = ({data}) =>{
+    return(
+        <div>
+            {data.map((item, idx) => (
+                <div key={idx}>
+                <label htmlFor="">{item.name}</label>
+                <input type="text" />
+                </div>
+            ))}
+        </div>
+    )
+}
+
+const TitleForm = (props) => {
+    return(
+        <div className="seven">
+        <h1>{props.title}</h1>
+    </div>
+    )
+}
 
 const Genitales = () => {
-    const [forma, setForma] = useState('');
-    const [piel, setPiel] = useState('');
-    const [masa, setMasa] = useState('');
-    const [ganglios, setGanglios] = useState('');
-    const [dolor, setDolor] = useState('');
-    const [mostrarOcultar, setMostrarOcultar] = useState(false)
-
-    const toogleMO = () =>{
-        setMostrarOcultar(!mostrarOcultar)
-    }
-    return (
-        <>
-        <button onClick={toogleMO} className="cta">
-            <span><b>{mostrarOcultar ? "Ingresa correctamente los datos" : "Genitales"}</b></span>
-        </button>
-        {
-            mostrarOcultar &&(
-                <div className="Form border rounded-lg p-8 shadow-md">    
-
-                <form action="" className="w-full p-4">
-                    <div className="seven">
-                <h1 className="text-xl  font-sans mb-4">Genitales</h1>
-                    </div>
-
-                <div className="flex justify-between mr-4">
-
-                    <div className="flex-1 mr-4">
-                        <label htmlFor="forma" className="block font-bold">Forma:</label>
-                        <input type="text" name="forma" id="forma"
-                            className="w-full border p-2"
-                            value={forma} onChange={(e) => setForma(e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1 mr-4">
-                        <label htmlFor="piel" className="block font-bold">Piel :</label>
-                        <input type="text" name="piel" id="piel"
-                            className="w-full border p-2"
-                            value={piel} onChange={(e) => setPiel(e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1 mr-4">
-                        <label htmlFor="masa" className="block font-bold">Masa :</label>
-                        <input type="text" name="masa" id="masa"
-                            className="w-full border p-2"
-                            value={masa} onChange={(e) => setMasa(e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1 mr-4">
-                        <label htmlFor="ganglios" className="block font-bold">Gangliod :</label>
-                        <input type="text" name="ganglios" id="ganglios"
-                            className="w-full border p-2"
-                            value={ganglios} onChange={(e) => setGanglios(e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1 mr-4">
-                        <label htmlFor="dolor" className="block font-bold">Dolor</label>
-                        <input type="text" name="dolor" id="dolor"
-                            className="w-full border p-2"
-                            value={dolor} onChange={(e) => setDolor(e.target.value)}
-                        />
-                    </div>
-                </div>
-            </form>
-            </div>
-            )
-        }
+    
+   return(
+   <>
+        <TitleForm  title="Genitales"/>
+        {[
+            DataGenitales.genitales
+        ].map((data, idx) => (
+            <RenderInputLabel data={data} key={idx} />
+        ))}
+        <TitleForm title= "Extremidades Superiores" />
+        {[
+            DataGenitales.ExtremidadesSuperiores
+        ].map((data, idx) =>(
+            <RenderInputLabel data={data} key={idx} />
+        ))}
+        <TitleForm title="Extremidades Inferiores"/>
+        {[
+            DataGenitales.ExtremidadesInferiores
+        ].map((data , idx) => (
+            <RenderInputLabel data={data} key={idx} />
+        ))}
+        <TitleForm title="Exploracion psiconeurologica" />
+        {[
+            DataGenitales.ExploracionPsiconeurologica
+        ].map((data, idx) => (
+            <RenderInputLabel data={data} key={idx} />
+        ))}
+        <TitleForm title="Examenes de Laboratorio" />
+        {[
+            DataGenitales.ExameDeLaboratorio
+        ].map((data, idx) => (
+            <RenderInputLabel data={data} key={idx} />
+        ))}
+        <TitleForm title="Diagnostico" />
+        {[
+            DataGenitales.DIAGNOSTICOS
+        ].map((data, idx) => (
+            <RenderInputLabel data={data} key={idx} />
+        ))}
         </>
     )
 }

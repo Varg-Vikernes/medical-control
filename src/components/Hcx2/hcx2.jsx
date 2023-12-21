@@ -1,9 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import AntPatologico from "./AntececentesPatologicos/Patologicos.component";
-import Obstretico from "./GenicoObstretico/Obstretico.component";
-import AntececenteMasculino from "./AntecedentesMasculinos/AntecMasculinos.component";
-import AntecedentesPorAparatos from "./InterrogatorioPorAparatos/Interrogatorio.component";
 import '../style/Hcx1.style.css'
 import alfa from "../../img/logoDobos.png";
 
@@ -35,9 +32,6 @@ const Hcx2 = () => {
                     <div className="container-form bg-white">
                     {/* Formularios */}
                     <AntPatologico />
-                    <Obstretico />
-                    <AntececenteMasculino />
-                    <AntecedentesPorAparatos />
                  <button className="button">Enviar datos por consola</button>
                     </div>
                 </div>

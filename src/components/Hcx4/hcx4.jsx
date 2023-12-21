@@ -1,11 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Genitales from "./Genitales/Genitales.component";
-import ExtremidadesSuperiores from "./Extremidades/Superiores.component";
-import ExtremidadesInferiores from "./Extremidades/Inferiores.component";
-import ExploracionPsiconeurologica from "./ExploracionPsico/ExploracionPsico.component";
-import { Laboratorio } from "./ExmLaboratorio/ExamenLaboratorio.component";
-import { Diagnostico } from "./Diagnostico/Diagnostico.component";
+
 import '../style/Hcx1.style.css'
 import alfa from "../../img/logoDobos.png";
 
@@ -37,11 +33,6 @@ const Hcx4 = () => {
                     {/* Formularios */}
                     <div className="container-form bg-white">
                     <Genitales />
-                    <ExtremidadesSuperiores />
-                    <ExtremidadesInferiores />
-                    <ExploracionPsiconeurologica />
-                    <Laboratorio />
-                    <Diagnostico />
                     <button className="button">Enviar datos por consola</button>
                     </div>
                 </div>
