@@ -17,14 +17,14 @@ export function Login() {
                 <div className="flex justify-center items-center h-screen ">
                     <div className="border rounded-lg p-8 shadow-md bg-white">
                         <h2 className="text-2x1 font bold mb-4">
-                            Iniciar sesion
+                            Iniciar sesión
                         </h2>
                         <input type="text"
                             placeholder="Usuario" value={userName}
                             onChange={(e) => setUserName(e.target.value)}
                             className="w-full p-2 rounded border mb-4" />
                         <h2 className="text-2x1 font bold mb-4">
-                            Contraseña_
+                            Contraseña
                         </h2>
                         <input type="password"
                             placeholder="Usuario" value={password}
@@ -32,7 +32,7 @@ export function Login() {
                             className="w-full p-2 rounded border mb-4" />
 
                         <button onClick={handleLogin} className="w-full bg-blue-500 text-white p-2 rounded cursor-pointer">
-                            Iniciar sesions
+                            Iniciar sesión
                         </button>
                     </div>
                 </div>
