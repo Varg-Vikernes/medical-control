@@ -1,9 +1,62 @@
 {
-  "s": [
+"ServicioMedico" : [
+  {"name" : "Examen medico"},
+  {"name" : "Ingreso"},
+  {"name" : "Periodico"},
+  {"name" : "Otros"},
+  {"name" : "Fecha"}
+],
+ "FichaDeIdentificacion" : [
+  {"name": "Nombre"},
+  {"name": "Edad"},
+  {"name": "Sexo"},
+  {"name": "Edo. civil"},
+  {"name": "Turno"},
+  {"name": "Lugar y fecha de nacimiento"},
+  {"name": "Planta"},
+  {"name": "Tipo de contrato"}, 
+  {"name": "DPTO"}, 
+  {"name": "Nombre del Supervisor"},
+  {"name": "Antiguedad en planta"},
+  {"name": "Puesto de trabajo"},
+  {"name": "Domicilio actual"}
+ ] ,
+  "AntecedentesLaborales": [
+    {"name": "Lugares donde ha laborado"},
+    {"name": "Labores que desempeño y cuanto tiempo"},
+    {"name": "A que tipo de agentes se exponia"},
+    {"name": "Productos que elabora"},
+    {"name": "Horas diarias de trabajo"},
+    {"name": "Dias a la semana trabajados"},
+    {"name": "Descansos fijos o rolados"},
+    {"name": "Turno"},
+    {"name": "Puesto o actividad"},
+    {"name": "Accidentes de trabajo"},
+    {"name": "Incapacidad"},
+    {"name": "Se le practico el examen de laboratorio y RZ"},
+    {"name": "Otros"},
+    {"name": "Tiene Actividades extralaborales"},
+    {"name": "Cuales"},
+    {"name": "Existe algun tipo de riesgos ergonomico en su trabajo"},
+    {"name": "Especifique"},
+    {"name": "Requiere analisis Ergonomico"}
+    ],
 
-  ],
-
-  "sa": [
+  "AntecedentesPersonalPatologico": [
+    {"name" : "Habitacion"},
+    {"name" : "Habitada por"},
+    {"name" : "No de habitaciones"},
+    {"name" : "Animales en casa"},
+    {"name" : "Tabaquismo"},
+    {"name" : "No de años"},
+    {"name" : "Cantidad por dia"},
+    {"name" : "Alcholizmo"},
+    {"name" : "No de años"},
+    {"name": "Frecuencia"},
+    {"name": "Higiene"},
+    {"name": "Alimentacion"},
+    {"name": "Inmunizaciones"},
+    {"name": "Actividades deportivas"}
 
   ],
 
