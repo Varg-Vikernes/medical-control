@@ -8,9 +8,14 @@ const ExamenLaboratorio = ({data }) => {
             <TitleForm title ="Examenes de Laboratorio y Diagnosticos" />
             {[
                 DataLaboratorio.ExameDeLaboratorio,
-                DataLaboratorio.DIAGNOSTICOS
             ].map((data,idx) =>(
             <RenderInputLabel  data={data} key={idx} />
+            ))}
+            <TitleForm title="Diagnosticos y Tratamientos" />
+            {[
+                DataLaboratorio.DIAGNOSTICOS,
+            ].map((data,idx) =>(
+                <RenderInputLabel data={data} key={idx} />
             ))}
         </>
     )

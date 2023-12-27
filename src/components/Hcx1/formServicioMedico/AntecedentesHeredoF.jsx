@@ -4,38 +4,40 @@ import data from '../../Utils/DataHeredoFamiliar.json';
 const familiaresData = data.familiaresData;
 const enfermedadesData = data.enfermedadesData;
 
-const HeredoFamiliar = () => {
+const renderTableHeader = () => (
+  <thead>
+    <tr>
+      <th className="border p-2 w-40 text-center">----------</th>
+      {familiaresData.map((familiar, idx) => (
+        <th key={idx} className="border p-2 w-40 text-center" >
+          {familiar.name}
+        </th>
+      ))}
+    </tr>
+  </thead>
+);
 
-  const renderTableHeader = () => (
-    <thead>
-      <tr>
-        <th className="border p-2 w-40 text-center"></th>
-        {familiaresData.map((familiar) => (
-          <th key={familiar.title} className="border p-2 w-40 text-center">
-            {familiar.name}
-          </th>
+const renderTableData = () => (
+  <tbody>
+    {enfermedadesData.map((enfermedad) => (
+      <tr key={enfermedad.title}>
+        <td className="border p-2 w-40 text-center">{enfermedad.name}</td>
+        {familiaresData.map((familiar, idx) => (
+          <td key={familiar.title} className="border p-2 w-40 text-center">
+            <input
+              type="checkbox"
+              key={idx}
+            />
+          </td>
         ))}
       </tr>
-    </thead>
-  );
+    ))}
+  </tbody>
+);
 
-  const renderTableData = () => (
-    <tbody>
-      {enfermedadesData.map((enfermedad) => (
-        <tr key={enfermedad.title}>
-          <td className="border p-2 w-40 text-center">{enfermedad.name}</td>
-          {familiaresData.map((familiar, idx) => (
-            <td key={familiar.title} className="border p-2 w-40 text-center">
-              <input
-                type="checkbox"
-                key={idx}
-              />
-            </td>
-          ))}
-        </tr>
-      ))}
-    </tbody>
-  );
+
+const HeredoFamiliar = () => {
+
 
   return (
     <>
