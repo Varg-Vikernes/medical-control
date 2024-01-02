@@ -9,7 +9,7 @@ const Genitales = () => {
         {/* Formulario Genitales */}
         <TitleForm  title="Genitales"/>
         {[
-            DataGenitales.genitales
+            DataGenitales.Genitals
         ].map((data, idx) => (
             <RenderInputLabel data={data} key={idx} />
         ))}

@@ -7,7 +7,7 @@ const Abdomen = () => {
         <>
         <TitleForm title="Abdomen" />
         {[
-            DataAbdomen.abdomen
+            DataAbdomen.Abdomen
         ].map((data, idx) => (
             <RenderInputLabel data={data} key={idx} />
         ))}

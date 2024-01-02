@@ -7,7 +7,7 @@ const ExploracionPsiconeurologica = ({data}) => {
         <>
         <TitleForm title ="Exploracion Neurologica" />
         {[
-            DataExploracion.ExploracionPsiconeurologica
+            DataExploracion.PsychoneurologicalExamination
         ].map((data, idx) =>(
             <RenderInputLabel data={data} key={idx} />
         ))}

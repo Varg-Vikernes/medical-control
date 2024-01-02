@@ -1,91 +1,85 @@
 {
-"ServicioMedico" : [
-  {"name" : "Examen medico"},
-  {"name" : "Ingreso"},
-  {"name" : "Periodico"},
-  {"name" : "Otros"},
-  {"name" : "Fecha"}
-],
- "FichaDeIdentificacion" : [
-  {"name": "Nombre"},
-  {"name": "Edad"},
-  {"name": "Sexo"},
-  {"name": "Edo. civil"},
-  {"name": "Turno"},
-  {"name": "Lugar y fecha de nacimiento"},
-  {"name": "Planta"},
-  {"name": "Tipo de contrato"}, 
-  {"name": "DPTO"}, 
-  {"name": "Nombre del Supervisor"},
-  {"name": "Antiguedad en planta"},
-  {"name": "Puesto de trabajo"},
-  {"name": "Domicilio actual"}
- ] ,
-  "AntecedentesLaborales": [
-    {"name": "Lugares donde ha laborado"},
-    {"name": "Labores que desempeño y cuanto tiempo"},
-    {"name": "A que tipo de agentes se exponia"},
-    {"name": "Productos que elabora"},
-    {"name": "Horas diarias de trabajo"},
-    {"name": "Dias a la semana trabajados"},
-    {"name": "Descansos fijos o rolados"},
-    {"name": "Turno"},
-    {"name": "Puesto o actividad"},
-    {"name": "Accidentes de trabajo"},
-    {"name": "Incapacidad"},
-    {"name": "Se le practico el examen de laboratorio y RZ"},
-    {"name": "Otros"},
-    {"name": "Tiene Actividades extralaborales"},
-    {"name": "Cuales"},
-    {"name": "Existe algun riesgos ergonomico en su trabajo"},
-    {"name": "Especifique"},
-    {"name": "Requiere analisis Ergonomico"}
-    ],
-
-  "AntecedentesPersonalPatologico": [
-    {"name" : "Habitacion"},
-    {"name" : "Habitada por"},
-    {"name" : "No de habitaciones"},
-    {"name" : "Animales en casa"},
-    {"name" : "Tabaquismo"},
-    {"name" : "No de años"},
-    {"name" : "Cantidad por dia"},
-    {"name" : "Alcholizmo"},
-    {"name" : "No de años"},
-    {"name": "Frecuencia"},
-    {"name": "Higiene"},
-    {"name": "Alimentacion"},
-    {"name": "Inmunizaciones"},
-    {"name": "Actividades deportivas"}
-
+  "MedicalService": [
+    {"name": "Medical Exam"},
+    {"name": "Admission"},
+    {"name": "Periodic"},
+    {"name": "Others"},
+    {"name": "Date"}
   ],
-
-
-  "familiaresData": [
-    { "name": "Padre" },
-    { "name": "Madre" },
-    { "name": "Hermano" },
-    { "name": "Hijo" },
-    { "name": "Otros" }
+  "IdentificationForm": [
+    {"name": "Name"},
+    {"name": "Age"},
+    {"name": "Gender"},
+    {"name": "Marital Status"},
+    {"name": "Shift"},
+    {"name": "Place and Date of Birth"},
+    {"name": "Plant"},
+    {"name": "Contract Type"},
+    {"name": "Department"},
+    {"name": "Supervisor's Name"},
+    {"name": "Seniority in Plant"},
+    {"name": "Job Position"},
+    {"name": "Current Address"}
   ],
-  
-  "enfermedadesData": [
-    { "name": "Asmático" },
-    { "name": "Diabético" },
-    { "name": "Psiquiátrico" },
-    { "name": "Epileptico" },
-    { "name": "Neoplasticos" },
-    { "name": "Artriticos" },
-    { "name": "Obesidad" },
-    { "name": "Cardiovasculares" },
-    { "name": "Hipertencivos" },
-    { "name": "Congenitos" },
-    { "name": "Hermatologos" },
-    { "name": "Audiologicos" },
-    { "name": "Sifiliticos" },
-    { "name": "Ulcerosos" },
-    { "name": "Litiasicos" },
-    { "name": "Otros" }
+  "WorkHistory": [
+    {"name": "Places where they have worked"},
+    {"name": "Tasks performed and duration"},
+    {"name": "Exposure to what type of agents"},
+    {"name": "Products manufactured"},
+    {"name": "Daily working hours"},
+    {"name": "Days worked per week"},
+    {"name": "Fixed or rotating rest days"},
+    {"name": "Shift"},
+    {"name": "Position or activity"},
+    {"name": "Work accidents"},
+    {"name": "Disability"},
+    {"name": "Underwent laboratory and X-ray examination"},
+    {"name": "Others"},
+    {"name": "Have extracurricular activities"},
+    {"name": "Which"},
+    {"name": "Any ergonomic risks in your work"},
+    {"name": "Specify"},
+    {"name": "Requires Ergonomic Analysis"}
+  ],
+  "PathologicalPersonalHistory": [
+    {"name": "Occupancy"},
+    {"name": "Inhabited by"},
+    {"name": "Number of rooms"},
+    {"name": "Animals at home"},
+    {"name": "Smoking"},
+    {"name": "Number of years"},
+    {"name": "Amount per day"},
+    {"name": "Alcoholism"},
+    {"name": "Number of years"},
+    {"name": "Frequency"},
+    {"name": "Hygiene"},
+    {"name": "Diet"},
+    {"name": "Immunizations"},
+    {"name": "Sports Activities"}
+  ],
+  "FamilyData": [
+    {"name": "Father"},
+    {"name": "Mother"},
+    {"name": "Brother"},
+    {"name": "Son"},
+    {"name": "Others"}
+  ],
+  "DiseasesData": [
+    {"name": "Asthmatic"},
+    {"name": "Diabetic"},
+    {"name": "Psychiatric"},
+    {"name": "Epileptic"},
+    {"name": "Neoplastic"},
+    {"name": "Arthritic"},
+    {"name": "Obesity"},
+    {"name": "Cardiovascular"},
+    {"name": "Hypertensive"},
+    {"name": "Congenital"},
+    {"name": "Hematologic"},
+    {"name": "Audiologic"},
+    {"name": "Syphilitic"},
+    {"name": "Ulcerative"},
+    {"name": "Lithiasic"},
+    {"name": "Others"}
   ]
 }
-

@@ -7,7 +7,7 @@ const CraneoCara = ({data}) => {
         <>
         <TitleForm title="Craneo Cara" />
         {[
-            DataCraneoCara.CraneoCara
+            DataCraneoCara.HeadFace
         ].map((data,idx) =>(
             <RenderInputLabel data={data} key={idx} />
         ))}

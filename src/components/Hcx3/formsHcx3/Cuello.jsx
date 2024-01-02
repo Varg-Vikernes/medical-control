@@ -7,7 +7,7 @@ const Cuello = ({data}) => {
         <>
             <TitleForm title="Cuello" />
             {[
-                DataCuello.Cuello
+                DataCuello.Neck
             ].map((data, idx) => (
                 <RenderInputLabel data={data} key={idx} />
             ))}

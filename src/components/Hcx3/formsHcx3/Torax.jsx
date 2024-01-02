@@ -7,7 +7,7 @@ const Torax = ({data}) =>{
         <>
         <TitleForm title ="Torax" />
         {[
-            DataTorax.Torax
+            DataTorax.Chest
         ].map((data, idx) =>(
             <RenderInputLabel data={data} key={idx} />
         ))}

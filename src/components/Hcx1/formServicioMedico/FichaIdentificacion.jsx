@@ -7,7 +7,7 @@ const FichaIdenticion = () =>{
         <>
         <TitleForm title="Ficha de Identificacion" />
         {[
-            DataFichaIdentificacion.FichaDeIdentificacion
+            DataFichaIdentificacion.IdentificationForm
         ].map((data, idx) => (
             <RenderInputLabel data={data} key={idx} />
         ))}

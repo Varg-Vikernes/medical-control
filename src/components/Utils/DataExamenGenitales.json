@@ -1,67 +1,68 @@
 {
-    "genitales" : [
-        {"name": "Forma"},
-        {"name": "Piel"},
-        {"name": "Masa"},
-        {"name": "Ganglios"},
-        {"name": "Dolor"}
+    "Genitals": [
+      {"name": "Shape"},
+      {"name": "Skin"},
+      {"name": "Mass"},
+      {"name": "Lymph Nodes"},
+      {"name": "Pain"}
     ],
-    "ExtremidadesSuperiores" :[
-        {"name" : "Estructura"},
-        {"name" : "Sensibilidad"},
-        {"name" : "Manos"},
-        {"name" : "Fuerza Muscular"},
-        {"name" : "Piel"},
-        {"name" : "Pulso"},
-        {"name" : "Uñas"},
-        {"name" : "Reflejos"},
-        {"name" : "Otras caracteristicas"}
+    "UpperExtremities": [
+      {"name": "Structure"},
+      {"name": "Sensitivity"},
+      {"name": "Hands"},
+      {"name": "Muscle Strength"},
+      {"name": "Skin"},
+      {"name": "Pulse"},
+      {"name": "Nails"},
+      {"name": "Reflexes"},
+      {"name": "Other Characteristics"}
     ],
-    "ExtremidadesInferiores": [
-        {"name": "Estructura"},
-        {"name": "Sensibilidad"},
-        {"name": "Pies"},
-        {"name": "Piel"},
-        {"name": "Fuerza Muscular"},
-        {"name": "Pulso"},
-        {"name": "Uñas"},
-        {"name": "Reflejos"},
-        {"name": "Otras caracteristicas"},
-        {"name": "Nota de Exploracion"}
+    "LowerExtremities": [
+      {"name": "Structure"},
+      {"name": "Sensitivity"},
+      {"name": "Feet"},
+      {"name": "Skin"},
+      {"name": "Muscle Strength"},
+      {"name": "Pulse"},
+      {"name": "Nails"},
+      {"name": "Reflexes"},
+      {"name": "Other Characteristics"},
+      {"name": "Exploration Note"}
     ],
-    "ExploracionPsiconeurologica" : [
-        {"name": "Aspecto"},
-        {"name": "Afectivas"},
-        {"name": "Conducta Motora"},
-        {"name": "Funcion Intelectual"},
-        {"name": "Atencion"},
-        {"name": "Juicio"},
-        {"name": "Asociacion de Ideas"},
-        {"name": "Orientacion"},
-        {"name": "Memoria"},
-        {"name": "Lenguaje"},
-        {"name": "Sensibilidad"},
-        {"name": "Motricidad"},
-        {"name": "Coordinacion"},
-        {"name": "Reflejos"},
-        {"name": "Equilibrio"},
-        {"name": "Otro"},
-        {"name": "Nota de Exploracion"}
+    "PsychoneurologicalExamination": [
+      {"name": "Appearance"},
+      {"name": "Affective State"},
+      {"name": "Motor Behavior"},
+      {"name": "Intellectual Function"},
+      {"name": "Attention"},
+      {"name": "Judgment"},
+      {"name": "Association of Ideas"},
+      {"name": "Orientation"},
+      {"name": "Memory"},
+      {"name": "Language"},
+      {"name": "Sensitivity"},
+      {"name": "Motor Skills"},
+      {"name": "Coordination"},
+      {"name": "Reflexes"},
+      {"name": "Balance"},
+      {"name": "Other"},
+      {"name": "Exploration Note"}
     ],
-    "ExameDeLaboratorio" : [
-        {"name": "BH"},
-        {"name": "Qs"},
-        {"name": "Grupo y RH"},
-        {"name": "Ego"},
-        {"name": "Audiometria"},
-        {"name": "Rx torax"},
-        {"name": "Rx columna"},
-        {"name": "Exudado faringeo"},
-        {"name": "Copro"}
+    "LaboratoryTests": [
+      {"name": "Complete Blood Count (CBC)"},
+      {"name": "Blood Sugar"},
+      {"name": "Blood Type and Rh"},
+      {"name": "Urinalysis"},
+      {"name": "Audiometry"},
+      {"name": "Chest X-ray"},
+      {"name": "Spine X-ray"},
+      {"name": "Throat Swab"},
+      {"name": "Stool Test"}
     ],
-    "DIAGNOSTICOS" : [
-        {"name" :"Diagnosticos"},
-        {"name" :"Tratamiento"},
-        {"name" :"Comentarios"}
+    "DIAGNOSES": [
+      {"name": "Diagnoses"},
+      {"name": "Treatment"},
+      {"name": "Comments"}
     ]
-}
+  }
+  

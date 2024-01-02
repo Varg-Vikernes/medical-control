@@ -1,8 +1,8 @@
 import React from "react";
 import data from '../../Utils/DataHeredoFamiliar.json';
 
-const familiaresData = data.familiaresData;
-const enfermedadesData = data.enfermedadesData;
+const familiaresData = data.FamilyData;
+const enfermedadesData = data.DiseasesData;
 
 const renderTableHeader = () => (
   <thead>

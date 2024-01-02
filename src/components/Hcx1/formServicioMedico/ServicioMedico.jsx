@@ -7,7 +7,7 @@ const ServicioMedico =() => {
         <>
         <TitleForm title="Servicio Medico" />
         {[
-            DataServicioMedico.ServicioMedico
+            DataServicioMedico.MedicalService
         ].map((data, idx) => (
             <RenderInputLabel data={data} key={idx} />
         ))}

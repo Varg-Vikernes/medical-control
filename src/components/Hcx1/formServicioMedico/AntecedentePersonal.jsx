@@ -7,7 +7,7 @@ const AntecedentePersonal = () => {
         <>
         <TitleForm title="Antecedentes personal no patologico" />
         {[
-            DataAntecedentesPersonales.AntecedentesPersonalPatologico
+            DataAntecedentesPersonales.PathologicalPersonalHistory
         ].map((data, idx) =>(
             <RenderInputLabel data={data} key={idx} />
         ))}

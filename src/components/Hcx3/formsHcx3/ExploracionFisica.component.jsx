@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import DataExploracionFisica from '../../Utils/ExploracionFisica.json';
 import { RenderInputLabel, TitleForm } from "../../Reusable/ComponentesReusables";
 const ExploracionF = () => {    
@@ -6,7 +6,7 @@ const ExploracionF = () => {
      <>
     <TitleForm title="Exploracion Fisica" />
     {[
-DataExploracionFisica.Fisica
+DataExploracionFisica.Physical
     ].map((data, idx) =>(
         <RenderInputLabel data={data} key={idx} />
     ))}

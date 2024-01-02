@@ -6,13 +6,13 @@ const ExtremidadesInfSup = ({data})  => {
         <>
             <TitleForm title="Extremidades Superiores" />
             {[
-                DataExtremidades.ExtremidadesSuperiores
+                DataExtremidades.LowerExtremities
             ].map((data, idx) =>(
                 <RenderInputLabel data={data} key={idx} />
             ))}
             <TitleForm title="Extremidades Inferiores" />
             {[
-                DataExtremidades.ExtremidadesInferiores
+                DataExtremidades.UpperExtremities
             ].map((data, idx) =>(
                 <RenderInputLabel data={data} key={idx} />
             ))}

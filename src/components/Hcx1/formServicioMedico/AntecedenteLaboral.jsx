@@ -7,7 +7,7 @@ const AntecedenteLaboral = () =>{
         <>
         <TitleForm title="Antecedentes laborales" />
         {[
-            DataAntecedenteLaboral.AntecedentesLaborales
+            DataAntecedenteLaboral.WorkHistory
         ].map((data, idx) => (
             <RenderInputLabel data={data} key={idx} />
         ))}

@@ -1,226 +1,226 @@
 {
-    "EnfermedadPartOne": [
-        {
-            "name": "Alergico"
-        },
-        {
-            "name": "Diabetico"
-        },
-        {
-            "name": "Epileptico"
-        },
-        {
-            "name": "Artritico"
-        },
-        {
-            "name": "Cardiovascular"
-        },
-        {
-            "name": "Hipertenso"
-        },
-        {
-            "name": "Hermatologico"
-        },
-        {
-            "name": "Traumatico"
-        },
-        {
-            "name": "Siquiatrico"
-        },
-        {
-            "name": "Neoplastico"
-        },
-        {
-            "name": "Quirurgico"
-        }
-    ],
-    "EnfermedadPartTwo": [
-        {
-            "name": "Endocrinologo"
-        },
-        {
-            "name": "Genitourinario"
-        },
-        {
-            "name": "Neurologico"
-        },
-        {
-            "name": "Asmatico"
-        },
-        {
-            "name": "Icterico"
-        },
-        {
-            "name": "Congenito"
-        },
-        {
-            "name": "Audiologo"
-        },
-        {
-            "name": "Transfuncional"
-        },
-        {
-            "name": "Parasitos"
-        },
-        {
-            "name": "Otros"
-        }
-    ],
-    "EnfermedadPartTree": [
-        {
-            "name": "Sarampion"
-        },
-        {
-            "name": "Rubeola"
-        },
-        {
-            "name": "Otitis"
-        },
-        {
-            "name": "Varicela"
-        },
-        {
-            "name": "Escarlatina"
-        },
-        {
-            "name": "Venereas"
-        },
-        {
-            "name": "Tuberculosis"
-        },
-        {
-            "name": "Parotiditis"
-        },
-        {
-            "name": "Amigdalas"
-        },
-        {
-            "name": "Bronquitis"
-        },
-        {
-            "name": "Otros"
-        }
-    ],
-    "GinecoObstreticoOne": [
-        {
-            "name": "Menarca"
-        },
-        {
-            "name": "Ritmo"
-        },
-        {
-            "name": "Ciclo Menstrual"
-        },
-        {
-            "name": "Caracteristicas"
-        },
-        {
-            "name": "Fum"
-        }
-    ],
-    "GinecoObstreticoTwo": [
-        {
-            "name": "Inicio vida Sexual activa"
-        },
-        {
-            "name": "Gestaciones"
-        },
-        {
-            "name": "Partos"
-        },
-        {
-            "name": "Cesarea"
-        },
-        {
-            "name": "Aborto"
-        }
-    ],
-    "GinecoObstreticoTree": [
-        {
-            "name": "Control de fertilidad"
-        },
-        {
-            "name": "Otros"
-        },
-        {
-            "name": "Infecciones"
-        },
-        {
-            "name": ""
-        },
-        {
-            "name": ""
-        }
-    ],
-    "AntecedentesMasculinosOne": [
-        {
-            "name": "Enfermedad de prostata"
-        },
-        {
-            "name": "Desordenes Reproductivos"
-        },
-        {
-            "name": "Dolor en el testiculo"
-        },
-        {
-            "name": "Otros"
-        }
-    ],
-    "AntecedentesMasculinosTwo": [
-        {
-            "name": "Orina Frecuente"
-        },
-        {
-            "name": "Masas en testiculos"
-        },
-        {
-            "name": "Vasectomia"
-        },
-        {
-            "name": ""
-        }
-    ],
-    "AntecedentesMasculinosTree": [
-        {
-            "name": "Infeccion de pene"
-        },
-        {
-            "name": "Infeccion de prostata"
-        },
-        {
-            "name": "Infeccion de Testiculos"
-        },
-        {
-            "name": ""
-        }
-    ],
-    "Interrogatorio": [
-        {
-            "name": "Digestivo"
-        },
-        {
-            "name": "Genitourinario"
-        },
-        {
-            "name": "Cardiovascular"
-        },
-        {
-            "name": "Respiratorio"
-        },
-        {
-            "name": "Neurologico"
-        },
-        {
-            "name": "Piel y Tegumentos"
-        },
-        {
-            "name": "Endocrino"
-        },
-        {
-            "name": "Hermatologicos"
-        },
-        {
-            "name": "Siquiatrico"
-        }
-    ]
+  "EnfermedadPartOne": [
+    {
+      "name": "Allergic"
+    },
+    {
+      "name": "Diabetic"
+    },
+    {
+      "name": "Epileptic"
+    },
+    {
+      "name": "Arthritic"
+    },
+    {
+      "name": "Cardiovascular"
+    },
+    {
+      "name": "Hypertensive"
+    },
+    {
+      "name": "Hematologic"
+    },
+    {
+      "name": "Traumatic"
+    },
+    {
+      "name": "Psychiatric"
+    },
+    {
+      "name": "Neoplastic"
+    },
+    {
+      "name": "Surgical"
+    }
+  ],
+  "EnfermedadPartTwo": [
+    {
+      "name": "Endocrinological"
+    },
+    {
+      "name": "Genitourinary"
+    },
+    {
+      "name": "Neurological"
+    },
+    {
+      "name": "Asthmatic"
+    },
+    {
+      "name": "Icteric"
+    },
+    {
+      "name": "Congenital"
+    },
+    {
+      "name": "Audiological"
+    },
+    {
+      "name": "Transfusional"
+    },
+    {
+      "name": "Parasitic"
+    },
+    {
+      "name": "Others"
+    }
+  ],
+  "EnfermedadPartTree": [
+    {
+      "name": "Measles"
+    },
+    {
+      "name": "Rubella"
+    },
+    {
+      "name": "Otitis"
+    },
+    {
+      "name": "Chickenpox"
+    },
+    {
+      "name": "Scarlet fever"
+    },
+    {
+      "name": "Venereal"
+    },
+    {
+      "name": "Tuberculosis"
+    },
+    {
+      "name": "Mumps"
+    },
+    {
+      "name": "Tonsillitis"
+    },
+    {
+      "name": "Bronchitis"
+    },
+    {
+      "name": "Others"
+    }
+  ],
+  "GinecoObstreticoOne": [
+    {
+      "name": "Menarche"
+    },
+    {
+      "name": "Rhythm"
+    },
+    {
+      "name": "Menstrual cycle"
+    },
+    {
+      "name": "Characteristics"
+    },
+    {
+      "name": "LMP (Last Menstrual Period)"
+    }
+  ],
+  "GinecoObstreticoTwo": [
+    {
+      "name": "Initiation of active sexual life"
+    },
+    {
+      "name": "Pregnancies"
+    },
+    {
+      "name": "Deliveries"
+    },
+    {
+      "name": "Cesarean section"
+    },
+    {
+      "name": "Abortion"
+    }
+  ],
+  "GinecoObstreticoTree": [
+    {
+      "name": "Fertility control"
+    },
+    {
+      "name": "Others"
+    },
+    {
+      "name": "Infections"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": ""
+    }
+  ],
+  "AntecedentesMasculinosOne": [
+    {
+      "name": "Prostate disease"
+    },
+    {
+      "name": "Reproductive disorders"
+    },
+    {
+      "name": "Testicular pain"
+    },
+    {
+      "name": "Others"
+    }
+  ],
+  "AntecedentesMasculinosTwo": [
+    {
+      "name": "Frequent urination"
+    },
+    {
+      "name": "Testicular masses"
+    },
+    {
+      "name": "Vasectomy"
+    },
+    {
+      "name": ""
+    }
+  ],
+  "AntecedentesMasculinosTree": [
+    {
+      "name": "Penis infection"
+    },
+    {
+      "name": "Prostate infection"
+    },
+    {
+      "name": "Testicular infection"
+    },
+    {
+      "name": ""
+    }
+  ],
+  "Interrogatorio": [
+    {
+      "name": "Digestive"
+    },
+    {
+      "name": "Genitourinary"
+    },
+    {
+      "name": "Cardiovascular"
+    },
+    {
+      "name": "Respiratory"
+    },
+    {
+      "name": "Neurological"
+    },
+    {
+      "name": "Skin and Integument"
+    },
+    {
+      "name": "Endocrine"
+    },
+    {
+      "name": "Hematological"
+    },
+    {
+      "name": "Psychiatric"
+    }
+  ]
 }
